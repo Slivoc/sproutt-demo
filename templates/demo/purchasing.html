@@ -1,0 +1,202 @@
+{% extends "base_demo.html" %}
+
+{% block title %}Purchasing - Sproutt Demo{% endblock %}
+
+{% block content %}
+<div>
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h1 class="mb-1">
+                <i class="bi bi-cart text-primary me-3"></i>
+                Purchasing
+            </h1>
+            <p class="text-muted mb-0">Manage supplier relationships and procurement operations</p>
+        </div>
+        <div class="text-end">
+            <div class="h4 mb-1 text-success">€{{ "{:,.0f}".format(data.purchasing.total_value) }}</div>
+            <small class="text-muted">Total Purchase Value</small>
+        </div>
+    </div>
+
+    <!-- Key Metrics -->
+    <div class="row mb-4">
+        <div class="col-md-3 mb-3">
+            <div class="demo-card text-center">
+                <div class="card-body">
+                    <h4 class="text-primary mb-1">{{ data.purchasing.pending_orders }}</h4>
+                    <small class="text-muted">Pending Orders</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="demo-card text-center">
+                <div class="card-body">
+                    <h4 class="text-success mb-1">{{ data.purchasing.received_orders }}</h4>
+                    <small class="text-muted">Received Orders</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="demo-card text-center">
+                <div class="card-body">
+                    <h4 class="text-warning mb-1">{{ data.purchasing.orders|length }}</h4>
+                    <small class="text-muted">Total Orders</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="demo-card text-center">
+                <div class="card-body">
+                    <h4 class="text-info mb-1">€{{ "{:,.0f}".format(data.purchasing.total_value / data.purchasing.orders|length) }}</h4>
+                    <small class="text-muted">Average Order Value</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Purchase Orders Table -->
+    <div class="demo-card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">
+                <i class="bi bi-receipt me-2"></i>
+                Purchase Orders Overview
+            </h5>
+            <div class="d-flex gap-2">
+                <input type="text" class="form-control form-control-sm" placeholder="Search orders..." style="width: 200px;">
+                <select class="form-select form-select-sm" style="width: 150px;">
+                    <option>All Status</option>
+                    <option>Ordered</option>
+                    <option>Received</option>
+                    <option>Pending</option>
+                    <option>Backordered</option>
+                </select>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table demo-table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Supplier</th>
+                            <th>Value</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for order in data.purchasing.orders %}
+                        <tr>
+                            <td>
+                                <strong>{{ order.id }}</strong>
+                            </td>
+                            <td>{{ order.supplier }}</td>
+                            <td>
+                                <strong class="text-success">€{{ "{:,.0f}".format(order.value) }}</strong>
+                            </td>
+                            <td>
+                                {% if order.status == 'Received' %}
+                                    <span class="status-badge status-completed">{{ order.status }}</span>
+                                {% elif order.status == 'Ordered' %}
+                                    <span class="status-badge status-active">{{ order.status }}</span>
+                                {% elif order.status == 'Backordered' %}
+                                    <span class="status-badge status-overdue">{{ order.status }}</span>
+                                {% else %}
+                                    <span class="status-badge status-pending">{{ order.status }}</span>
+                                {% endif %}
+                            </td>
+                            <td>{{ order.date }}</td>
+                            <td>
+                                <div class="btn-group btn-group-sm">
+                                    <button class="btn btn-outline-primary btn-sm" disabled>
+                                        <i class="bi bi-eye"></i>
+                                    </button>
+                                    <button class="btn btn-outline-secondary btn-sm" disabled>
+                                        <i class="bi bi-pencil"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Purchase orders pagination" class="mt-4">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Supplier Performance Summary -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="demo-card">
+                <div class="card-header">
+                    <h6 class="mb-0">
+                        <i class="bi bi-bar-chart me-2"></i>
+                        Supplier Performance
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="small">On-Time Delivery Rate</span>
+                            <strong class="text-success">{{ data.dashboard.metrics.on_time_delivery }}%</strong>
+                        </div>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-success" style="width: {{ data.dashboard.metrics.on_time_delivery }}%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="small">Quality Score</span>
+                            <strong class="text-info">{{ data.dashboard.metrics.supplier_performance }}%</strong>
+                        </div>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-info" style="width: {{ data.dashboard.metrics.supplier_performance }}%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="demo-card">
+                <div class="card-header">
+                    <h6 class="mb-0">
+                        <i class="bi bi-trophy me-2"></i>
+                        Top Suppliers
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <div class="mb-2">
+                        <strong>Global Components</strong>
+                        <div class="text-muted small">18 orders • €487K total value</div>
+                    </div>
+                    <div class="mb-2">
+                        <strong>Industrial Parts Ltd</strong>
+                        <div class="text-muted small">15 orders • €423K total value</div>
+                    </div>
+                    <div class="mb-2">
+                        <strong>Quality Suppliers Inc</strong>
+                        <div class="text-muted small">12 orders • €356K total value</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,495 @@
+{% extends "base_demo.html" %}
+
+{% block title %}Dashboard - Sproutt Demo{% endblock %}
+
+{% block content %}
+<div>
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h1 class="mb-1">
+                <i class="bi bi-speedometer2 text-primary me-3"></i>
+                Executive Dashboard
+            </h1>
+            <p class="text-muted mb-0">Real-time business intelligence and performance metrics</p>
+        </div>
+        <div class="text-end">
+            <div class="h5 mb-0 text-success">▲ {{ data.dashboard.metrics.monthly_growth }}%</div>
+            <small class="text-muted">Monthly Growth</small>
+        </div>
+    </div>
+
+    <!-- Key Metrics Row -->
+    <div class="row mb-4">
+        <div class="col-xl-3 col-lg-6 mb-4">
+            <div class="metric-card">
+                <div class="metric-value">€{{ "{:,.0f}".format(data.dashboard.metrics.total_revenue / 1000000) }}M</div>
+                <div class="metric-label">Total Revenue</div>
+                <div class="mt-2">
+                    <small class="text-white-50">Last 12 months</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 mb-4">
+            <div class="metric-card">
+                <div class="metric-value">{{ data.dashboard.metrics.customer_satisfaction }}%</div>
+                <div class="metric-label">Customer Satisfaction</div>
+                <div class="mt-2">
+                    <small class="text-white-50">NPS Score: 87</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 mb-4">
+            <div class="metric-card">
+                <div class="metric-value">{{ data.dashboard.metrics.ai_insights_generated }}</div>
+                <div class="metric-label">Insights Generated</div>
+                <div class="mt-2">
+                    <small class="text-white-50">This month</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 mb-4">
+            <div class="metric-card">
+                <div class="metric-value">€{{ "{:,.0f}".format(data.dashboard.metrics.cost_savings / 1000) }}K</div>
+                <div class="metric-label">Cost Savings Identified</div>
+                <div class="mt-2">
+                    <small class="text-white-50">Smart optimizations</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charts Row 1 -->
+    <div class="row mb-4">
+        <div class="col-lg-8 mb-4">
+            <div class="demo-card h-100">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <i class="bi bi-graph-up me-2"></i>
+                        Revenue Trend & Projections
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="chart-container">
+                        <canvas id="revenueChart"></canvas>
+                    </div>
+                    <div class="mt-3 text-center">
+                        <span class="badge bg-success me-2">
+                            <i class="bi bi-arrow-up"></i> 23.7% Growth
+                        </span>
+                        <small class="text-muted">Projected: €18.2M by year-end</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="demo-card h-100">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <i class="bi bi-funnel me-2"></i>
+                        Conversion Funnel
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="chart-container" style="height: 300px;">
+                        <canvas id="funnelChart"></canvas>
+                    </div>
+                    <div class="mt-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <small class="text-muted">Conversion Rate</small>
+                            <strong class="text-success">0.31%</strong>
+                        </div>
+                        <div class="progress" style="height: 6px;">
+                            <div class="progress-bar bg-success" style="width: 31%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charts Row 2 -->
+    <div class="row mb-4">
+        <div class="col-lg-6 mb-4">
+            <div class="demo-card h-100">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <i class="bi bi-diagram-3 me-2"></i>
+                        Project Status Distribution
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="chart-container" style="height: 300px;">
+                        <canvas id="projectChart"></canvas>
+                    </div>
+                    <div class="mt-3">
+                        <div class="row text-center">
+                            <div class="col-6">
+                                <div class="h6 mb-0 text-primary">{{ data.dashboard.metrics.active_projects }}</div>
+                                <small class="text-muted">Active Projects</small>
+                            </div>
+                            <div class="col-6">
+                                <div class="h6 mb-0 text-success">{{ data.operations.completed_projects }}</div>
+                                <small class="text-muted">Completed</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+            <div class="demo-card h-100">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <i class="bi bi-trending-up me-2"></i>
+                        Performance Metrics Trend
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="chart-container" style="height: 300px;">
+                        <canvas id="performanceChart"></canvas>
+                    </div>
+                    <div class="mt-3">
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <div class="h6 mb-0 text-info">{{ data.dashboard.metrics.on_time_delivery }}%</div>
+                                <small class="text-muted">On-Time</small>
+                            </div>
+                            <div class="col-4">
+                                <div class="h6 mb-0 text-warning">{{ data.dashboard.metrics.efficiency_score }}%</div>
+                                <small class="text-muted">Efficiency</small>
+                            </div>
+                            <div class="col-4">
+                                <div class="h6 mb-0 text-danger">{{ data.dashboard.metrics.supplier_performance }}%</div>
+                                <small class="text-muted">Suppliers</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Insights & Activities Row -->
+    <div class="row mb-4">
+        <div class="col-lg-6 mb-4">
+            <div class="demo-card h-100">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">
+                        <i class="bi bi-robot me-2"></i>
+                        Smart Insights
+                    </h5>
+                    <span class="badge bg-primary">{{ data.dashboard.ai_insights|length }}</span>
+                </div>
+                <div class="card-body">
+                    {% for insight in data.dashboard.ai_insights %}
+                    <div class="mb-3 p-3 bg-light rounded">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h6 class="mb-1">{{ insight.title }}</h6>
+                            <span class="badge bg-{% if insight.impact == 'Critical' %}danger{% elif insight.impact == 'High' %}warning{% else %}info{% endif %}">
+                                {{ insight.impact }}
+                            </span>
+                        </div>
+                        <p class="mb-2 small">{{ insight.description }}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">Confidence: {{ insight.confidence }}%</small>
+                            <div class="progress flex-grow-1 ms-2" style="height: 4px;">
+                                <div class="progress-bar bg-success" style="width: {{ insight.confidence }}%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+            <div class="demo-card h-100">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <i class="bi bi-activity me-2"></i>
+                        Recent Activity Feed
+                    </h5>
+                </div>
+                <div class="card-body" style="max-height: 400px; overflow-y: auto;">
+                    {% for activity in data.dashboard.activities %}
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="flex-shrink-0 me-3">
+                            <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+                                <i class="bi bi-{% if 'Sale' in activity.type %}cash{% elif 'Lead' in activity.type %}person-plus{% elif 'Project' in activity.type %}kanban{% elif 'AI' in activity.type %}robot{% elif 'Order' in activity.type %}box-seam{% else %}envelope{% endif %} text-white" style="font-size: 14px;"></i>
+                            </div>
+                        </div>
+                        <div class="flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="mb-1">{{ activity.type }}</h6>
+                                <small class="text-muted">{{ activity.date }}</small>
+                            </div>
+                            <p class="mb-1 small">{{ activity.description }}</p>
+                            {% if activity.value %}
+                            <div class="text-success fw-bold">€{{ "{:,.0f}".format(activity.value) }}</div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Customers & Additional Metrics -->
+    <div class="row">
+        <div class="col-lg-8 mb-4">
+            <div class="demo-card h-100">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <i class="bi bi-trophy me-2"></i>
+                        Top Customers by Revenue
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table demo-table">
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Customer</th>
+                                    <th>Revenue</th>
+                                    <th>Orders</th>
+                                    <th>Growth</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for customer in data.dashboard.top_customers %}
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            {% if loop.index == 1 %}
+                                                <i class="bi bi-trophy-fill text-warning me-2"></i>
+                                            {% elif loop.index == 2 %}
+                                                <i class="bi bi-trophy-fill text-secondary me-2"></i>
+                                            {% elif loop.index == 3 %}
+                                                <i class="bi bi-trophy-fill text-danger me-2"></i>
+                                            {% else %}
+                                                <span class="badge bg-light text-dark me-2">{{ loop.index }}</span>
+                                            {% endif %}
+                                        </div>
+                                    </td>
+                                    <td class="fw-bold">{{ customer.name }}</td>
+                                    <td>€{{ "{:,.0f}".format(customer.revenue) }}</td>
+                                    <td>{{ customer.orders }}</td>
+                                    <td>
+                                        <span class="text-success">
+                                            <i class="bi bi-arrow-up"></i> {{ customer.growth }}%
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="status-badge status-active">VIP</span>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="demo-card h-100">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <i class="bi bi-bar-chart me-2"></i>
+                        Key Performance Indicators
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="small">Profit Margin</span>
+                            <strong class="text-success">{{ data.dashboard.metrics.profit_margin }}%</strong>
+                        </div>
+                        <div class="progress mb-3" style="height: 8px;">
+                            <div class="progress-bar bg-success" style="width: {{ data.dashboard.metrics.profit_margin }}%"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="small">Inventory Turnover</span>
+                        <strong class="text-info">{{ data.dashboard.metrics.inventory_turnover }}</strong>
+                    </div>
+                    <div class="progress mb-3" style="height: 8px;">
+                        <div class="progress-bar bg-info" style="width: 62.5%"></div>
+                    </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="small">Repeat Business Rate</span>
+                            <strong class="text-warning">{{ data.dashboard.metrics.repeat_business_rate }}%</strong>
+                        </div>
+                        <div class="progress mb-3" style="height: 8px;">
+                            <div class="progress-bar bg-warning" style="width: {{ data.dashboard.metrics.repeat_business_rate }}%"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="small">Innovation Index</span>
+                            <strong class="text-primary">{{ data.dashboard.metrics.innovation_index }}%</strong>
+                        </div>
+                        <div class="progress mb-3" style="height: 8px;">
+                            <div class="progress-bar bg-primary" style="width: {{ data.dashboard.metrics.innovation_index }}%"></div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="text-center">
+                        <div class="h6 mb-1">{{ data.dashboard.metrics.new_customers }}</div>
+                        <small class="text-muted">New Customers This Month</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Revenue Chart
+    const revenueCtx = document.getElementById('revenueChart').getContext('2d');
+    new Chart(revenueCtx, {
+        type: 'line',
+        data: {{ data.dashboard.revenue_chart | tojson }},
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            return '€' + context.parsed.y.toLocaleString();
+                        }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    ticks: {
+                        callback: function(value) {
+                            return '€' + (value / 1000) + 'K';
+                        }
+                    }
+                }
+            }
+        }
+    });
+
+    // Funnel Chart
+    const funnelCtx = document.getElementById('funnelChart').getContext('2d');
+    new Chart(funnelCtx, {
+        type: 'bar',
+        data: {{ data.dashboard.funnel_chart | tojson }},
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            indexAxis: 'y',
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            return context.parsed.x.toLocaleString() + ' ' + context.label.toLowerCase();
+                        }
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    ticks: {
+                        callback: function(value) {
+                            if (value >= 1000) {
+                                return (value / 1000).toFixed(0) + 'K';
+                            }
+                            return value;
+                        }
+                    }
+                }
+            }
+        }
+    });
+
+    // Project Status Chart
+    const projectCtx = document.getElementById('projectChart').getContext('2d');
+    new Chart(projectCtx, {
+        type: 'doughnut',
+        data: {{ data.dashboard.project_status_chart | tojson }},
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        padding: 20,
+                        usePointStyle: true
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            const total = context.dataset.data.reduce((a, b) => a + b);
+                            const percentage = ((context.parsed / total) * 100).toFixed(1);
+                            return context.label + ': ' + context.parsed + ' (' + percentage + '%)';
+                        }
+                    }
+                }
+            }
+        }
+    });
+
+    // Performance Chart
+    const performanceCtx = document.getElementById('performanceChart').getContext('2d');
+    new Chart(performanceCtx, {
+        type: 'line',
+        data: {{ data.dashboard.performance_chart | tojson }},
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'bottom'
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            return context.dataset.label + ': ' + context.parsed.y + '%';
+                        }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: false,
+                    min: 85,
+                    max: 100,
+                    ticks: {
+                        callback: function(value) {
+                            return value + '%';
+                        }
+                    }
+                }
+            }
+        }
+    });
+
+});
+</script>
+{% endblock %}

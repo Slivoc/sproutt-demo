@@ -1,0 +1,239 @@
+{% extends "base_demo.html" %}
+
+{% block title %}Sproutt Demo - Home{% endblock %}
+
+{% block content %}
+<div>
+    <!-- Hero Section -->
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold mb-3">
+            <i class="bi bi-rocket-takeoff text-primary me-3"></i>
+            Welcome to Sproutt
+        </h1>
+        <p class="lead text-muted mb-4">
+            Experience intelligent business management with our comprehensive demo
+        </p>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <p class="mb-4">
+                    Discover how Sproutt transforms your business operations with intelligent automation,
+                    real-time analytics, and seamless integration across all departments.
+                </p>
+                <a href="/demo/dashboard" class="btn btn-primary btn-lg me-3">
+                    <i class="bi bi-speedometer2 me-2"></i>View Dashboard
+                </a>
+                <a href="#modules" class="btn btn-outline-primary btn-lg">
+                    <i class="bi bi-grid me-2"></i>Explore Modules
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Key Features -->
+    <div class="row mb-5">
+        <div class="col-md-4 mb-4">
+            <div class="demo-card text-center h-100">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <i class="bi bi-robot display-4 text-primary"></i>
+                    </div>
+                    <h5 class="card-title">AI-Powered Insights</h5>
+                    <p class="card-text text-muted">
+                        Advanced machine learning algorithms analyze your data to provide actionable business intelligence and predictive analytics.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="demo-card text-center h-100">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <i class="bi bi-graph-up display-4 text-success"></i>
+                    </div>
+                    <h5 class="card-title">Real-Time Analytics</h5>
+                    <p class="card-text text-muted">
+                        Comprehensive dashboards with live data visualization, performance metrics, and trend analysis across all business functions.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="demo-card text-center h-100">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <i class="bi bi-shield-check display-4 text-info"></i>
+                    </div>
+                    <h5 class="card-title">Integrated Platform</h5>
+                    <p class="card-text text-muted">
+                        Seamless connectivity between sales, purchasing, operations, and customer service with unified data management.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Module Overview -->
+    <div id="modules" class="mb-5">
+        <h2 class="text-center mb-4">Explore Our Modules</h2>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <a href="/demo/dashboard" class="text-decoration-none">
+                    <div class="demo-card text-center h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="bi bi-speedometer2 display-4 text-primary"></i>
+                            </div>
+                            <h5 class="card-title">Dashboard</h5>
+                            <p class="card-text text-muted small">
+                                Executive overview with KPIs, charts, and AI insights
+                            </p>
+                            <span class="badge bg-primary">Featured</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <a href="/demo/sales" class="text-decoration-none">
+                    <div class="demo-card text-center h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="bi bi-graph-up display-4 text-success"></i>
+                            </div>
+                            <h5 class="card-title">Sales</h5>
+                            <p class="card-text text-muted small">
+                                Order management, customer tracking, and revenue analytics
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <a href="/demo/purchasing" class="text-decoration-none">
+                    <div class="demo-card text-center h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="bi bi-cart display-4 text-warning"></i>
+                            </div>
+                            <h5 class="card-title">Purchasing</h5>
+                            <p class="card-text text-muted small">
+                                Supplier management, purchase orders, and procurement analytics
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <a href="/demo/operations" class="text-decoration-none">
+                    <div class="demo-card text-center h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="bi bi-gear display-4 text-info"></i>
+                            </div>
+                            <h5 class="card-title">Operations</h5>
+                            <p class="card-text text-muted small">
+                                Project management, resource allocation, and operational efficiency
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <a href="/demo/prospecting" class="text-decoration-none">
+                    <div class="demo-card text-center h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="bi bi-search display-4 text-danger"></i>
+                            </div>
+                            <h5 class="card-title">Prospecting</h5>
+                            <p class="card-text text-muted small">
+                                Lead generation, customer discovery, and market intelligence
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <a href="/demo/ai-analysis" class="text-decoration-none">
+                    <div class="demo-card text-center h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="bi bi-chat-text display-4 text-secondary"></i>
+                            </div>
+                            <h5 class="card-title">AI Reporting</h5>
+                            <p class="card-text text-muted small">
+                                Query your data using natural language and get instant SQL results
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <a href="/demo/price-lists" class="text-decoration-none">
+                    <div class="demo-card text-center h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="bi bi-receipt display-4 text-dark"></i>
+                            </div>
+                            <h5 class="card-title">Price Lists</h5>
+                            <p class="card-text text-muted small">
+                                Customer-facing pricing, quote management, and competitive analysis
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <a href="/demo/portal" class="text-decoration-none">
+                    <div class="demo-card text-center h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="bi bi-globe display-4 text-info"></i>
+                            </div>
+                            <h5 class="card-title">Customer Portal</h5>
+                            <p class="card-text text-muted small">
+                                Self-service ordering, order tracking, and customer communication
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Overview -->
+    <div class="row">
+        <div class="col-md-3 mb-3">
+            <div class="demo-card text-center">
+                <div class="card-body">
+                    <h3 class="text-primary mb-1">€8.75M</h3>
+                    <small class="text-muted">Annual Revenue</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="demo-card text-center">
+                <div class="card-body">
+                    <h3 class="text-success mb-1">98.5%</h3>
+                    <small class="text-muted">Customer Satisfaction</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="demo-card text-center">
+                <div class="card-body">
+                    <h3 class="text-warning mb-1">1,250</h3>
+                    <small class="text-muted">AI Insights Generated</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="demo-card text-center">
+                <div class="card-body">
+                    <h3 class="text-info mb-1">156</h3>
+                    <small class="text-muted">Deals Closed</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

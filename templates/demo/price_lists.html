@@ -1,0 +1,239 @@
+{% extends "base_demo.html" %}
+
+{% block title %}Price Lists - Sproutt Demo{% endblock %}
+
+{% block content %}
+<div>
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h1 class="mb-1">
+                <i class="bi bi-receipt text-primary me-3"></i>
+                Customer Price Lists
+            </h1>
+            <p class="text-muted mb-0">Transparent pricing for customer self-service</p>
+        </div>
+        <div class="text-end">
+            <div class="badge bg-primary fs-6 px-3 py-2">Customer Portal</div>
+        </div>
+    </div>
+
+    <!-- Customer Type Selection -->
+    <div class="demo-card mb-4">
+        <div class="card-header">
+            <h5 class="mb-0">
+                <i class="bi bi-person-badge me-2"></i>
+                Select Customer Type
+            </h5>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                {% for customer_type in data.price_lists.customer_types %}
+                <div class="col-md-3 mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="customerType" id="type{{ customer_type }}" value="{{ customer_type }}" {% if customer_type == 'Standard' %}checked{% endif %}>
+                        <label class="form-check-label" for="type{{ customer_type }}">
+                            <strong>{{ customer_type }}</strong>
+                            {% if customer_type == 'Standard' %}
+                                <br><small class="text-muted">List prices</small>
+                            {% elif customer_type == 'Premium' %}
+                                <br><small class="text-muted">5% discount</small>
+                            {% elif customer_type == 'Enterprise' %}
+                                <br><small class="text-muted">10% discount</small>
+                            {% else %}
+                                <br><small class="text-muted">15% discount</small>
+                            {% endif %}
+                        </label>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="alert alert-info mt-3">
+                <i class="bi bi-info-circle me-2"></i>
+                <strong>Customer Portal:</strong> Registered customers can access discounted pricing and place orders directly through our secure portal.
+            </div>
+        </div>
+    </div>
+
+    <!-- Price List Table -->
+    <div class="demo-card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">
+                <i class="bi bi-table me-2"></i>
+                Current Price List
+            </h5>
+            <div class="d-flex gap-2">
+                <input type="text" class="form-control form-control-sm" placeholder="Search parts..." style="width: 200px;">
+                <select class="form-select form-select-sm" style="width: 150px;">
+                    <option>All Categories</option>
+                    <option>Bearings</option>
+                    <option>Motors</option>
+                    <option>Valves</option>
+                    <option>Sensors</option>
+                </select>
+                <button class="btn btn-outline-primary btn-sm" disabled>
+                    <i class="bi bi-download me-1"></i> Export
+                </button>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table demo-table">
+                    <thead>
+                        <tr>
+                            <th>Part Number</th>
+                            <th>Description</th>
+                            <th>Base Price</th>
+                            <th>Customer Price</th>
+                            <th>Discount</th>
+                            <th>MOQ</th>
+                            <th>Lead Time</th>
+                            <th>Availability</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in data.price_lists['items'] %}
+                        <tr>
+                            <td>
+                                <strong>{{ item.part_number }}</strong>
+                            </td>
+                            <td>{{ item.description }}</td>
+                            <td>
+                                <span class="text-muted">€{{ "{:,.2f}".format(item.base_price) }}</span>
+                            </td>
+                            <td>
+                                <strong class="text-success">€{{ item.final_price }}</strong>
+                            </td>
+                            <td>
+                                {% if item.discount_percent > 0 %}
+                                    <span class="badge bg-success">{{ item.discount_percent }}% off</span>
+                                {% else %}
+                                    <span class="text-muted">-</span>
+                                {% endif %}
+                            </td>
+                            <td>{{ item.moq }}</td>
+                            <td>{{ item.lead_time_days }} days</td>
+                            <td>
+                                {% if item.availability == 'In Stock' %}
+                                    <span class="status-badge status-active">{{ item.availability }}</span>
+                                {% elif item.availability == '2-3 weeks' %}
+                                    <span class="status-badge status-pending">{{ item.availability }}</span>
+                                {% else %}
+                                    <span class="status-badge status-overdue">{{ item.availability }}</span>
+                                {% endif %}
+                            </td>
+                            <td>
+                                <div class="btn-group btn-group-sm">
+                                    <button class="btn btn-outline-primary btn-sm" disabled>
+                                        <i class="bi bi-cart-plus"></i> Add to Quote
+                                    </button>
+                                    <button class="btn btn-outline-info btn-sm" disabled>
+                                        <i class="bi bi-info-circle"></i> Details
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Price list pagination" class="mt-4">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Customer Portal Features -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="demo-card">
+                <div class="card-header">
+                    <h6 class="mb-0">
+                        <i class="bi bi-shield-check me-2"></i>
+                        Customer Portal Benefits
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+                            <strong>Real-time Pricing:</strong> Always access current prices and availability
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+                            <strong>Order Tracking:</strong> Monitor order status from placement to delivery
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+                            <strong>Volume Discounts:</strong> Automatic discounts based on order volume
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+                            <strong>Quote Requests:</strong> Submit custom quote requests for special requirements
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+                            <strong>Order History:</strong> Access complete order history and invoices
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="demo-card">
+                <div class="card-header">
+                    <h6 class="mb-0">
+                        <i class="bi bi-graph-up me-2"></i>
+                        Customer Savings Summary
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="small">Average Customer Discount</span>
+                            <strong class="text-success">8.5%</strong>
+                        </div>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-success" style="width: 85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="small">Portal Adoption Rate</span>
+                            <strong class="text-info">92%</strong>
+                        </div>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-info" style="width: 92%"></div>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-success mt-3">
+                        <i class="bi bi-trophy me-2"></i>
+                        <strong>Customer Favorite:</strong> 94% of portal users report faster ordering and better pricing visibility.
+                    </div>
+
+                    <div class="text-center mt-3">
+                        <button class="btn btn-primary" disabled>
+                            <i class="bi bi-person-plus me-2"></i>Register for Portal Access
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

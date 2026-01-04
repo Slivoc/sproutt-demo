@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Sproutt Demo{% endblock %}</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap and dependencies -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Chart.js for beautiful graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+
+    <!-- Sproutt branding -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/lumen.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/solid-colors.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    <style>
+        /* Demo banner */
+        .demo-banner {
+            background-color: #5ebc67;
+            color: white;
+            padding: 8px 16px;
+            font-weight: 500;
+            text-align: center;
+            font-size: 14px;
+            border-bottom: 1px solid #4a9651;
+        }
+
+        /* Sidebar styling */
+        .demo-sidebar {
+            width: 280px;
+            background-color: #f8f9fa;
+            border-right: 1px solid #e9ecef;
+            min-height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .demo-sidebar .navbar-brand {
+            padding: 1rem;
+            background: white;
+            border-bottom: 1px solid #dee2e6;
+            margin-bottom: 1rem;
+        }
+
+        .demo-sidebar .nav-link {
+            padding: 0.75rem 1rem;
+            color: #495057;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            border-radius: 0.375rem;
+            margin: 0.125rem 0.5rem;
+            transition: all 0.2s ease;
+        }
+
+        .demo-sidebar .nav-link:hover {
+            background-color: #e8f5e9;
+            color: #5ebc67;
+        }
+
+        .demo-sidebar .nav-link.active {
+            background-color: #5ebc67;
+            color: white;
+        }
+
+        .demo-sidebar .nav-link i {
+            margin-right: 0.5rem;
+            width: 20px;
+        }
+
+        /* Main content */
+        .demo-main {
+            margin-left: 280px;
+            min-height: 100vh;
+        }
+
+        .demo-content {
+            padding: 2rem;
+        }
+
+        /* Card styling */
+        .demo-card {
+            border: 1px solid #e9ecef;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+            background-color: white;
+            transition: box-shadow 0.2s ease;
+        }
+
+        .demo-card:hover {
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+        }
+
+        .demo-card .card-header {
+            background-color: #f8f9fa;
+            color: #333340;
+            border-radius: 0.5rem 0.5rem 0 0 !important;
+            border-bottom: 1px solid #e9ecef;
+            font-weight: 600;
+        }
+
+        /* Metric cards */
+        .metric-card {
+            background-color: #5ebc67;
+            color: white;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* Chart containers */
+        .chart-container {
+            position: relative;
+            height: 400px;
+            margin-bottom: 2rem;
+        }
+
+        /* Table styling */
+        .demo-table {
+            border-radius: 0.375rem;
+            overflow: hidden;
+            border: 1px solid #e9ecef;
+        }
+
+        .demo-table thead th {
+            background-color: #f8f9fa;
+            color: #333340;
+            border: none;
+            border-bottom: 2px solid #e9ecef;
+            padding: 0.875rem 1rem;
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+
+        .demo-table tbody tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        .demo-table tbody tr:hover {
+            background-color: #f5f9f5;
+        }
+
+        /* Status badges */
+        .status-badge {
+            padding: 0.25rem 0.625rem;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+        }
+
+        .status-active { background-color: #e3fcec; color: #0d6832; }
+        .status-pending { background-color: #fff8e1; color: #9a6700; }
+        .status-completed { background-color: #e8f5e9; color: #1b5e20; }
+        .status-overdue { background-color: #fee2e2; color: #b91c1c; }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .demo-sidebar {
+                width: 100%;
+                position: relative;
+            }
+            .demo-main {
+                margin-left: 0;
+            }
+        }
+    </style>
+
+    {% block extra_head %}{% endblock %}
+</head>
+
+<body>
+    <!-- Demo Banner -->
+    <div class="demo-banner">
+        <i class="bi bi-info-circle me-2"></i>
+        DEMO MODE - This is a showcase of Sproutt's capabilities with sample data
+    </div>
+
+    <!-- Sidebar -->
+    <div class="demo-sidebar">
+        <a href="/demo" class="navbar-brand d-flex align-items-center">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Sproutt" width="32" height="32" class="me-2">
+            <span class="fw-bold">Sproutt Demo</span>
+        </a>
+
+        <nav class="nav flex-column">
+            <a href="/demo" class="nav-link">
+                <i class="bi bi-house"></i> Home
+            </a>
+            <a href="/demo/dashboard" class="nav-link">
+                <i class="bi bi-speedometer2"></i> Dashboard
+            </a>
+            <a href="/demo/sales" class="nav-link">
+                <i class="bi bi-graph-up"></i> Sales
+            </a>
+            <a href="/demo/purchasing" class="nav-link">
+                <i class="bi bi-cart"></i> Purchasing
+            </a>
+            <a href="/demo/operations" class="nav-link">
+                <i class="bi bi-gear"></i> Operations
+            </a>
+            <a href="/demo/prospecting" class="nav-link">
+                <i class="bi bi-search"></i> Prospecting
+            </a>
+            <a href="/demo/ai-analysis" class="nav-link">
+                <i class="bi bi-chat-text"></i> AI Reporting
+            </a>
+            <a href="/demo/price-lists" class="nav-link">
+                <i class="bi bi-receipt"></i> Price Lists
+            </a>
+            <a href="/demo/portal" class="nav-link">
+                <i class="bi bi-globe"></i> Customer Portal
+            </a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="demo-main">
+        <div class="demo-content">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+
+    {% block scripts %}{% endblock %}
+</body>
+</html>

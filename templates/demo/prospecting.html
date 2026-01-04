@@ -1,0 +1,358 @@
+{% extends "base_demo.html" %}
+
+{% block title %}Prospecting - Sproutt Demo{% endblock %}
+
+{% block content %}
+<div>
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h1 class="mb-1">
+                <i class="bi bi-search text-primary me-3"></i>
+                Smart Prospecting
+            </h1>
+            <p class="text-muted mb-0">AI-powered customer intelligence and lead generation</p>
+        </div>
+    </div>
+
+    <!-- Four Feature Cards -->
+    <div class="row mb-4">
+        <!-- Feature 1: Analyze Customer Base -->
+        <div class="col-lg-6 mb-4">
+            <div class="demo-card h-100">
+                <div class="card-header bg-primary bg-opacity-10 border-0">
+                    <div class="d-flex align-items-center">
+                        <div class="feature-icon bg-primary text-white rounded-circle p-3 me-3">
+                            <i class="bi bi-bar-chart-line fs-4"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Analyze Your Customer Base</h5>
+                            <small class="text-muted">Discover strengths, gaps & growth opportunities</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="text-muted mb-3">
+                        Sproutt analyzes your existing customers to identify patterns, high-value segments,
+                        and untapped market opportunities.
+                    </p>
+
+                    <div class="row text-center mb-3">
+                        <div class="col-4">
+                            <div class="p-2 bg-success bg-opacity-10 rounded">
+                                <div class="h5 mb-0 text-success">12</div>
+                                <small class="text-muted">Strengths</small>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-2 bg-warning bg-opacity-10 rounded">
+                                <div class="h5 mb-0 text-warning">5</div>
+                                <small class="text-muted">Gaps</small>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-2 bg-info bg-opacity-10 rounded">
+                                <div class="h5 mb-0 text-info">8</div>
+                                <small class="text-muted">Opportunities</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-light border mb-0">
+                        <i class="bi bi-lightbulb text-warning me-2"></i>
+                        <small><strong>Key Insight:</strong> Your aerospace clients have 40% higher lifetime value.
+                        Consider expanding in this sector.</small>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                    <button class="btn btn-outline-primary btn-sm" disabled>
+                        <i class="bi bi-play-circle me-1"></i> Run Analysis
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feature 2: Enrich Customer Info -->
+        <div class="col-lg-6 mb-4">
+            <div class="demo-card h-100">
+                <div class="card-header bg-success bg-opacity-10 border-0">
+                    <div class="d-flex align-items-center">
+                        <div class="feature-icon bg-success text-white rounded-circle p-3 me-3">
+                            <i class="bi bi-database-fill-up fs-4"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Enrich Customer Data</h5>
+                            <small class="text-muted">Fill gaps and update existing records</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="text-muted mb-3">
+                        Automatically enrich your customer records with missing company details,
+                        contacts, financials, and social profiles.
+                    </p>
+
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <small>Data Completeness</small>
+                            <small class="text-success">78%</small>
+                        </div>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-success" style="width: 78%"></div>
+                        </div>
+                    </div>
+
+                    <div class="row g-2 mb-3">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center p-2 bg-light rounded">
+                                <i class="bi bi-check-circle text-success me-2"></i>
+                                <small>156 records enriched</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center p-2 bg-light rounded">
+                                <i class="bi bi-hourglass-split text-warning me-2"></i>
+                                <small>23 pending review</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-light border mb-0">
+                        <i class="bi bi-info-circle text-info me-2"></i>
+                        <small><strong>Recent:</strong> Added revenue data and LinkedIn profiles for 34 accounts.</small>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                    <button class="btn btn-outline-success btn-sm" disabled>
+                        <i class="bi bi-arrow-repeat me-1"></i> Enrich Records
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feature 3: Identify Target Customers -->
+        <div class="col-lg-6 mb-4">
+            <div class="demo-card h-100">
+                <div class="card-header bg-warning bg-opacity-10 border-0">
+                    <div class="d-flex align-items-center">
+                        <div class="feature-icon bg-warning text-white rounded-circle p-3 me-3">
+                            <i class="bi bi-bullseye fs-4"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Identify Target Customers</h5>
+                            <small class="text-muted">Find ideal prospects using live company data</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="text-muted mb-3">
+                        Using your customer profile and real-time web data, Sproutt identifies companies
+                        that match your ideal customer profile.
+                    </p>
+
+                    <div class="mb-3">
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                            <span class="badge bg-primary bg-opacity-20 text-primary">Aerospace</span>
+                            <span class="badge bg-primary bg-opacity-20 text-primary">Defense</span>
+                            <span class="badge bg-primary bg-opacity-20 text-primary">Manufacturing</span>
+                            <span class="badge bg-secondary bg-opacity-20 text-secondary">€10M+ Revenue</span>
+                            <span class="badge bg-secondary bg-opacity-20 text-secondary">50+ Employees</span>
+                        </div>
+                        <small class="text-muted">Based on your top-performing customers</small>
+                    </div>
+
+                    <div class="row text-center mb-3">
+                        <div class="col-6">
+                            <div class="p-2 bg-warning bg-opacity-10 rounded">
+                                <div class="h5 mb-0 text-warning">{{ data.prospecting.total_prospects }}</div>
+                                <small class="text-muted">Matches Found</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-2 bg-success bg-opacity-10 rounded">
+                                <div class="h5 mb-0 text-success">{{ data.prospecting.qualified_leads }}</div>
+                                <small class="text-muted">High-Fit Prospects</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-light border mb-0">
+                        <i class="bi bi-globe text-primary me-2"></i>
+                        <small><strong>Live Data:</strong> Scanning industry databases, news, and company websites.</small>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                    <button class="btn btn-outline-warning btn-sm" disabled>
+                        <i class="bi bi-search me-1"></i> Find Targets
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feature 4: Generate Leads -->
+        <div class="col-lg-6 mb-4">
+            <div class="demo-card h-100">
+                <div class="card-header bg-info bg-opacity-10 border-0">
+                    <div class="d-flex align-items-center">
+                        <div class="feature-icon bg-info text-white rounded-circle p-3 me-3">
+                            <i class="bi bi-person-lines-fill fs-4"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Generate Real Leads</h5>
+                            <small class="text-muted">Get verified contacts ready to reach out</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="text-muted mb-3">
+                        Sproutt delivers verified leads with contact information, so your sales team
+                        can start conversations immediately.
+                    </p>
+
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <small>Leads with Verified Contact Info</small>
+                            <small class="text-info">92%</small>
+                        </div>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-info" style="width: 92%"></div>
+                        </div>
+                    </div>
+
+                    <div class="list-group list-group-flush mb-3">
+                        <div class="list-group-item px-0 py-2 d-flex justify-content-between align-items-center border-0 bg-transparent">
+                            <div>
+                                <i class="bi bi-envelope-check text-success me-2"></i>
+                                <small>Email addresses</small>
+                            </div>
+                            <span class="badge bg-success">{{ data.prospecting.qualified_leads }}</span>
+                        </div>
+                        <div class="list-group-item px-0 py-2 d-flex justify-content-between align-items-center border-0 bg-transparent">
+                            <div>
+                                <i class="bi bi-telephone text-success me-2"></i>
+                                <small>Phone numbers</small>
+                            </div>
+                            <span class="badge bg-success">{{ (data.prospecting.qualified_leads * 0.85)|int }}</span>
+                        </div>
+                        <div class="list-group-item px-0 py-2 d-flex justify-content-between align-items-center border-0 bg-transparent">
+                            <div>
+                                <i class="bi bi-linkedin text-primary me-2"></i>
+                                <small>LinkedIn profiles</small>
+                            </div>
+                            <span class="badge bg-primary">{{ (data.prospecting.qualified_leads * 0.95)|int }}</span>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="h4 text-success mb-0">€{{ "{:,.0f}".format(data.prospecting.total_potential_value) }}</div>
+                        <small class="text-muted">Total Pipeline Value</small>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                    <button class="btn btn-outline-info btn-sm" disabled>
+                        <i class="bi bi-download me-1"></i> Export Leads
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Generated Leads Preview Table -->
+    <div class="demo-card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">
+                <i class="bi bi-people me-2"></i>
+                Generated Leads
+            </h5>
+            <div class="d-flex gap-2">
+                <span class="badge bg-success">{{ data.prospecting.qualified_leads }} Verified</span>
+                <button class="btn btn-sm btn-outline-primary" disabled>
+                    <i class="bi bi-funnel me-1"></i> Filter
+                </button>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table demo-table">
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Industry</th>
+                            <th>Contact</th>
+                            <th>Match Score</th>
+                            <th>Potential Value</th>
+                            <th>Contact Info</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for prospect in data.prospecting.prospects[:8] %}
+                        <tr>
+                            <td>
+                                <strong>{{ prospect.company }}</strong>
+                                <br><small class="text-muted">{{ prospect.source }}</small>
+                            </td>
+                            <td>
+                                <span class="badge bg-light text-dark">{{ prospect.industry }}</span>
+                            </td>
+                            <td>{{ prospect.contact }}</td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="progress flex-grow-1 me-2" style="height: 6px; width: 60px;">
+                                        <div class="progress-bar {% if prospect.score >= 85 %}bg-success{% elif prospect.score >= 70 %}bg-warning{% else %}bg-secondary{% endif %}"
+                                             style="width: {{ prospect.score }}%"></div>
+                                    </div>
+                                    <span class="badge {% if prospect.score >= 85 %}bg-success{% elif prospect.score >= 70 %}bg-warning{% else %}bg-secondary{% endif %}">
+                                        {{ prospect.score }}%
+                                    </span>
+                                </div>
+                            </td>
+                            <td>
+                                <strong class="text-success">€{{ "{:,.0f}".format(prospect.potential_value) }}</strong>
+                            </td>
+                            <td>
+                                <div class="d-flex gap-1">
+                                    <i class="bi bi-envelope-check text-success" title="Email verified"></i>
+                                    <i class="bi bi-telephone text-success" title="Phone verified"></i>
+                                    <i class="bi bi-linkedin text-primary" title="LinkedIn available"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="btn-group btn-group-sm">
+                                    <button class="btn btn-outline-primary btn-sm" disabled title="View Details">
+                                        <i class="bi bi-eye"></i>
+                                    </button>
+                                    <button class="btn btn-outline-success btn-sm" disabled title="Add to CRM">
+                                        <i class="bi bi-plus-circle"></i>
+                                    </button>
+                                    <button class="btn btn-outline-secondary btn-sm" disabled title="Send Email">
+                                        <i class="bi bi-envelope"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="text-center mt-3">
+                <button class="btn btn-primary" disabled>
+                    <i class="bi bi-arrow-down-circle me-2"></i>
+                    Load More Leads
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+</style>
+{% endblock %}
