@@ -235,6 +235,18 @@
             <a href="/demo/portal" class="nav-link">
                 <i class="bi bi-globe"></i> Customer Portal
             </a>
+            <a href="/demo/mailbox" class="nav-link">
+                <i class="bi bi-envelope"></i> Mailbox
+                {% if data.mailbox.unread_emails > 0 %}
+                    <span class="badge bg-danger ms-auto">{{ data.mailbox.unread_emails }}</span>
+                {% endif %}
+            </a>
+            <a href="/demo/tickets" class="nav-link">
+                <i class="bi bi-headset"></i> Support Tickets
+                {% if data.tickets.open_tickets > 0 %}
+                    <span class="badge bg-warning ms-auto">{{ data.tickets.open_tickets }}</span>
+                {% endif %}
+            </a>
         </nav>
     </div>
 

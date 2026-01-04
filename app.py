@@ -58,6 +58,14 @@ def price_lists():
 def portal():
     return render_template('demo/portal.html', data=demo_data)
 
+@app.route('/demo/mailbox')
+def mailbox():
+    return render_template('demo/mailbox.html', data=demo_data)
+
+@app.route('/demo/tickets')
+def tickets():
+    return render_template('demo/tickets.html', data=demo_data)
+
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5001))
     app.run(debug=False, host='0.0.0.0', port=port)

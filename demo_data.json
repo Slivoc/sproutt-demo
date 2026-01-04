@@ -222,94 +222,94 @@
     ],
     "activities": [
       {
-        "type": "AI Insight",
-        "description": "Activity 1 description with lots of exciting details",
-        "value": 5756,
-        "date": "2026-01-03 07:56"
-      },
-      {
-        "type": "AI Insight",
-        "description": "Activity 2 description with lots of exciting details",
-        "value": 12863,
-        "date": "2026-01-04 07:56"
-      },
-      {
-        "type": "New Lead",
-        "description": "Activity 3 description with lots of exciting details",
-        "value": 23473,
-        "date": "2026-01-02 16:56"
-      },
-      {
-        "type": "Quote Sent",
-        "description": "Activity 4 description with lots of exciting details",
-        "value": 5181,
-        "date": "2026-01-03 00:56"
-      },
-      {
-        "type": "Quote Sent",
-        "description": "Activity 5 description with lots of exciting details",
-        "value": 37409,
-        "date": "2026-01-01 19:56"
-      },
-      {
-        "type": "Sale Completed",
-        "description": "Activity 6 description with lots of exciting details",
-        "value": 16645,
-        "date": "2026-01-04 03:56"
-      },
-      {
         "type": "Project Milestone",
-        "description": "Activity 7 description with lots of exciting details",
-        "value": 31635,
-        "date": "2026-01-01 22:56"
+        "description": "Activity 1 description with lots of exciting details",
+        "value": 5081,
+        "date": "2026-01-01 16:06"
       },
       {
         "type": "Order Shipped",
+        "description": "Activity 2 description with lots of exciting details",
+        "value": 26865,
+        "date": "2026-01-01 18:06"
+      },
+      {
+        "type": "Project Milestone",
+        "description": "Activity 3 description with lots of exciting details",
+        "value": 10530,
+        "date": "2026-01-02 09:06"
+      },
+      {
+        "type": "Project Milestone",
+        "description": "Activity 4 description with lots of exciting details",
+        "value": 11564,
+        "date": "2026-01-03 04:06"
+      },
+      {
+        "type": "Order Shipped",
+        "description": "Activity 5 description with lots of exciting details",
+        "value": 13893,
+        "date": "2026-01-03 11:06"
+      },
+      {
+        "type": "Order Shipped",
+        "description": "Activity 6 description with lots of exciting details",
+        "value": 48017,
+        "date": "2026-01-03 01:06"
+      },
+      {
+        "type": "AI Insight",
+        "description": "Activity 7 description with lots of exciting details",
+        "value": 12997,
+        "date": "2026-01-04 01:06"
+      },
+      {
+        "type": "Sale Completed",
         "description": "Activity 8 description with lots of exciting details",
-        "value": 34358,
-        "date": "2026-01-02 09:56"
+        "value": 39682,
+        "date": "2026-01-02 07:06"
       },
       {
         "type": "Quote Sent",
         "description": "Activity 9 description with lots of exciting details",
-        "value": 5713,
-        "date": "2026-01-02 04:56"
+        "value": 7514,
+        "date": "2026-01-03 17:06"
       },
       {
-        "type": "New Lead",
+        "type": "Quote Sent",
         "description": "Activity 10 description with lots of exciting details",
-        "value": 35870,
-        "date": "2026-01-04 03:56"
+        "value": 46056,
+        "date": "2026-01-03 16:06"
       },
       {
-        "type": "Sale Completed",
+        "type": "AI Insight",
         "description": "Activity 11 description with lots of exciting details",
-        "value": 12923,
-        "date": "2026-01-02 00:56"
+        "value": 25404,
+        "date": "2026-01-01 23:06"
+      },
+      {
+        "type": "Quote Sent",
+        "description": "Activity 12 description with lots of exciting details",
+        "value": 30257,
+        "date": "2026-01-03 07:06"
       },
       {
         "type": "New Lead",
-        "description": "Activity 12 description with lots of exciting details",
-        "value": 17500,
-        "date": "2026-01-03 10:56"
-      },
-      {
-        "type": "Sale Completed",
         "description": "Activity 13 description with lots of exciting details",
-        "value": 20252,
-        "date": "2026-01-04 04:56"
+        "value": 35717,
+        "date": "2026-01-02 17:06"
       },
       {
         "type": "Project Milestone",
         "description": "Activity 14 description with lots of exciting details",
-        "value": 35900,
-        "date": "2026-01-02 12:56"
+        "value": 39711,
+        "date": "2026-01-02 07:06"
       },
       {
-        "type": "Order Shipped",
+        "type": "Sale Completed",
         "description": "Activity 15 description with lots of exciting details",
-        "value": 16717,
-        "date": "2026-01-02 17:56"
+        "value": 44173,
+        "date": "2026-01-03 14:06"
       }
     ],
     "top_customers": [
@@ -349,1292 +349,1292 @@
     "orders": [
       {
         "id": "SO-2026-001",
-        "customer": "Global Parts Co",
-        "value": 145138,
-        "status": "Pending",
-        "date": "2025-12-05"
+        "customer": "Manufacturing Inc",
+        "value": 114284,
+        "status": "Completed",
+        "date": "2025-11-20"
       },
       {
         "id": "SO-2026-002",
-        "customer": "Manufacturing Inc",
-        "value": 43734,
-        "status": "Pending",
-        "date": "2025-12-10"
+        "customer": "Industrial Solutions GmbH",
+        "value": 134592,
+        "status": "Active",
+        "date": "2025-10-06"
       },
       {
         "id": "SO-2026-003",
-        "customer": "TechCorp Ltd",
-        "value": 14177,
-        "status": "Active",
-        "date": "2025-11-04"
+        "customer": "Industrial Solutions GmbH",
+        "value": 126632,
+        "status": "Pending",
+        "date": "2025-12-07"
       },
       {
         "id": "SO-2026-004",
-        "customer": "Manufacturing Inc",
-        "value": 67822,
-        "status": "Pending",
-        "date": "2025-11-08"
+        "customer": "Precision Engineering Ltd",
+        "value": 125643,
+        "status": "Shipped",
+        "date": "2025-12-14"
       },
       {
         "id": "SO-2026-005",
         "customer": "Global Parts Co",
-        "value": 56067,
+        "value": 136188,
         "status": "Shipped",
-        "date": "2025-12-05"
-      },
-      {
-        "id": "SO-2026-006",
-        "customer": "Global Parts Co",
-        "value": 122845,
-        "status": "Completed",
-        "date": "2025-12-28"
-      },
-      {
-        "id": "SO-2026-007",
-        "customer": "Industrial Solutions GmbH",
-        "value": 52061,
-        "status": "Shipped",
-        "date": "2025-12-25"
-      },
-      {
-        "id": "SO-2026-008",
-        "customer": "Manufacturing Inc",
-        "value": 56058,
-        "status": "Active",
-        "date": "2025-12-10"
-      },
-      {
-        "id": "SO-2026-009",
-        "customer": "Global Parts Co",
-        "value": 59936,
-        "status": "Active",
         "date": "2025-10-19"
       },
       {
-        "id": "SO-2026-010",
-        "customer": "Global Parts Co",
-        "value": 117978,
+        "id": "SO-2026-006",
+        "customer": "Precision Engineering Ltd",
+        "value": 36728,
+        "status": "Active",
+        "date": "2026-01-03"
+      },
+      {
+        "id": "SO-2026-007",
+        "customer": "Precision Engineering Ltd",
+        "value": 12108,
         "status": "Completed",
-        "date": "2025-11-16"
+        "date": "2026-01-02"
+      },
+      {
+        "id": "SO-2026-008",
+        "customer": "TechCorp Ltd",
+        "value": 11972,
+        "status": "Pending",
+        "date": "2025-10-22"
+      },
+      {
+        "id": "SO-2026-009",
+        "customer": "TechCorp Ltd",
+        "value": 42581,
+        "status": "Shipped",
+        "date": "2025-10-13"
+      },
+      {
+        "id": "SO-2026-010",
+        "customer": "TechCorp Ltd",
+        "value": 101554,
+        "status": "Shipped",
+        "date": "2025-12-31"
       },
       {
         "id": "SO-2026-011",
-        "customer": "Manufacturing Inc",
-        "value": 34078,
-        "status": "Pending",
-        "date": "2025-10-20"
-      },
-      {
-        "id": "SO-2026-012",
-        "customer": "TechCorp Ltd",
-        "value": 66009,
-        "status": "Pending",
-        "date": "2025-11-10"
-      },
-      {
-        "id": "SO-2026-013",
-        "customer": "Industrial Solutions GmbH",
-        "value": 107471,
-        "status": "Pending",
-        "date": "2025-12-25"
-      },
-      {
-        "id": "SO-2026-014",
-        "customer": "Industrial Solutions GmbH",
-        "value": 73975,
-        "status": "Completed",
-        "date": "2025-12-07"
-      },
-      {
-        "id": "SO-2026-015",
-        "customer": "Industrial Solutions GmbH",
-        "value": 140884,
-        "status": "Active",
-        "date": "2025-12-06"
-      },
-      {
-        "id": "SO-2026-016",
-        "customer": "TechCorp Ltd",
-        "value": 83818,
-        "status": "Shipped",
-        "date": "2025-12-19"
-      },
-      {
-        "id": "SO-2026-017",
-        "customer": "TechCorp Ltd",
-        "value": 79306,
+        "customer": "Global Parts Co",
+        "value": 135638,
         "status": "Shipped",
         "date": "2025-10-18"
       },
       {
-        "id": "SO-2026-018",
-        "customer": "Global Parts Co",
-        "value": 17253,
+        "id": "SO-2026-012",
+        "customer": "Industrial Solutions GmbH",
+        "value": 65299,
         "status": "Shipped",
-        "date": "2025-11-16"
+        "date": "2025-11-17"
       },
       {
-        "id": "SO-2026-019",
-        "customer": "TechCorp Ltd",
-        "value": 108881,
-        "status": "Active",
-        "date": "2025-12-07"
-      },
-      {
-        "id": "SO-2026-020",
+        "id": "SO-2026-013",
         "customer": "Global Parts Co",
-        "value": 121932,
+        "value": 23238,
+        "status": "Shipped",
+        "date": "2025-12-10"
+      },
+      {
+        "id": "SO-2026-014",
+        "customer": "TechCorp Ltd",
+        "value": 64517,
+        "status": "Active",
+        "date": "2025-12-19"
+      },
+      {
+        "id": "SO-2026-015",
+        "customer": "Global Parts Co",
+        "value": 72894,
+        "status": "Active",
+        "date": "2025-11-30"
+      },
+      {
+        "id": "SO-2026-016",
+        "customer": "Manufacturing Inc",
+        "value": 98936,
+        "status": "Active",
+        "date": "2025-11-30"
+      },
+      {
+        "id": "SO-2026-017",
+        "customer": "Global Parts Co",
+        "value": 140802,
         "status": "Pending",
         "date": "2025-12-22"
       },
       {
-        "id": "SO-2026-021",
+        "id": "SO-2026-018",
         "customer": "Industrial Solutions GmbH",
-        "value": 46174,
+        "value": 86764,
+        "status": "Shipped",
+        "date": "2025-12-29"
+      },
+      {
+        "id": "SO-2026-019",
+        "customer": "Global Parts Co",
+        "value": 127570,
         "status": "Pending",
-        "date": "2025-12-11"
+        "date": "2025-10-15"
+      },
+      {
+        "id": "SO-2026-020",
+        "customer": "Manufacturing Inc",
+        "value": 105009,
+        "status": "Completed",
+        "date": "2025-10-08"
+      },
+      {
+        "id": "SO-2026-021",
+        "customer": "Global Parts Co",
+        "value": 44548,
+        "status": "Completed",
+        "date": "2025-12-03"
       },
       {
         "id": "SO-2026-022",
         "customer": "Manufacturing Inc",
-        "value": 31189,
-        "status": "Active",
-        "date": "2025-11-22"
+        "value": 35123,
+        "status": "Completed",
+        "date": "2025-12-18"
       },
       {
         "id": "SO-2026-023",
-        "customer": "Global Parts Co",
-        "value": 43609,
-        "status": "Pending",
-        "date": "2025-12-23"
-      },
-      {
-        "id": "SO-2026-024",
-        "customer": "Global Parts Co",
-        "value": 12741,
-        "status": "Completed",
-        "date": "2025-10-06"
-      },
-      {
-        "id": "SO-2026-025",
         "customer": "Precision Engineering Ltd",
-        "value": 99783,
-        "status": "Shipped",
-        "date": "2025-10-12"
-      },
-      {
-        "id": "SO-2026-026",
-        "customer": "Manufacturing Inc",
-        "value": 54412,
-        "status": "Completed",
-        "date": "2025-11-09"
-      },
-      {
-        "id": "SO-2026-027",
-        "customer": "Industrial Solutions GmbH",
-        "value": 85750,
-        "status": "Completed",
-        "date": "2025-11-27"
-      },
-      {
-        "id": "SO-2026-028",
-        "customer": "Manufacturing Inc",
-        "value": 140960,
-        "status": "Active",
-        "date": "2025-10-09"
-      },
-      {
-        "id": "SO-2026-029",
-        "customer": "Precision Engineering Ltd",
-        "value": 123378,
-        "status": "Completed",
-        "date": "2025-10-17"
-      },
-      {
-        "id": "SO-2026-030",
-        "customer": "Global Parts Co",
-        "value": 24217,
-        "status": "Shipped",
-        "date": "2025-10-18"
-      },
-      {
-        "id": "SO-2026-031",
-        "customer": "Manufacturing Inc",
-        "value": 24536,
-        "status": "Shipped",
-        "date": "2025-10-12"
-      },
-      {
-        "id": "SO-2026-032",
-        "customer": "TechCorp Ltd",
-        "value": 24913,
-        "status": "Active",
-        "date": "2025-12-29"
-      },
-      {
-        "id": "SO-2026-033",
-        "customer": "TechCorp Ltd",
-        "value": 97926,
-        "status": "Shipped",
-        "date": "2025-10-08"
-      },
-      {
-        "id": "SO-2026-034",
-        "customer": "TechCorp Ltd",
-        "value": 134320,
-        "status": "Shipped",
-        "date": "2025-10-19"
-      },
-      {
-        "id": "SO-2026-035",
-        "customer": "Industrial Solutions GmbH",
-        "value": 78604,
-        "status": "Shipped",
-        "date": "2025-10-29"
-      },
-      {
-        "id": "SO-2026-036",
-        "customer": "Precision Engineering Ltd",
-        "value": 16613,
-        "status": "Shipped",
-        "date": "2025-12-19"
-      },
-      {
-        "id": "SO-2026-037",
-        "customer": "Global Parts Co",
-        "value": 51478,
-        "status": "Active",
-        "date": "2025-12-01"
-      },
-      {
-        "id": "SO-2026-038",
-        "customer": "TechCorp Ltd",
-        "value": 123144,
-        "status": "Pending",
-        "date": "2025-12-15"
-      },
-      {
-        "id": "SO-2026-039",
-        "customer": "Manufacturing Inc",
-        "value": 72530,
-        "status": "Pending",
-        "date": "2025-12-17"
-      },
-      {
-        "id": "SO-2026-040",
-        "customer": "Global Parts Co",
-        "value": 130824,
-        "status": "Completed",
-        "date": "2025-12-09"
-      },
-      {
-        "id": "SO-2026-041",
-        "customer": "Manufacturing Inc",
-        "value": 141052,
-        "status": "Active",
-        "date": "2025-11-16"
-      },
-      {
-        "id": "SO-2026-042",
-        "customer": "Industrial Solutions GmbH",
-        "value": 112840,
-        "status": "Shipped",
-        "date": "2025-11-08"
-      },
-      {
-        "id": "SO-2026-043",
-        "customer": "TechCorp Ltd",
-        "value": 105111,
-        "status": "Shipped",
-        "date": "2025-11-30"
-      },
-      {
-        "id": "SO-2026-044",
-        "customer": "TechCorp Ltd",
-        "value": 7824,
-        "status": "Completed",
-        "date": "2025-10-31"
-      },
-      {
-        "id": "SO-2026-045",
-        "customer": "Precision Engineering Ltd",
-        "value": 112969,
-        "status": "Active",
-        "date": "2025-11-27"
-      },
-      {
-        "id": "SO-2026-046",
-        "customer": "Manufacturing Inc",
-        "value": 45450,
-        "status": "Pending",
-        "date": "2025-11-16"
-      },
-      {
-        "id": "SO-2026-047",
-        "customer": "Precision Engineering Ltd",
-        "value": 55293,
-        "status": "Pending",
-        "date": "2025-12-17"
-      },
-      {
-        "id": "SO-2026-048",
-        "customer": "Manufacturing Inc",
-        "value": 24067,
+        "value": 110100,
         "status": "Active",
         "date": "2025-12-05"
       },
       {
-        "id": "SO-2026-049",
+        "id": "SO-2026-024",
+        "customer": "Industrial Solutions GmbH",
+        "value": 142265,
+        "status": "Shipped",
+        "date": "2025-10-15"
+      },
+      {
+        "id": "SO-2026-025",
+        "customer": "Industrial Solutions GmbH",
+        "value": 84364,
+        "status": "Pending",
+        "date": "2025-12-05"
+      },
+      {
+        "id": "SO-2026-026",
+        "customer": "Precision Engineering Ltd",
+        "value": 143282,
+        "status": "Pending",
+        "date": "2025-12-27"
+      },
+      {
+        "id": "SO-2026-027",
+        "customer": "Global Parts Co",
+        "value": 127207,
+        "status": "Active",
+        "date": "2025-10-26"
+      },
+      {
+        "id": "SO-2026-028",
         "customer": "Manufacturing Inc",
-        "value": 29130,
+        "value": 128889,
+        "status": "Shipped",
+        "date": "2025-12-06"
+      },
+      {
+        "id": "SO-2026-029",
+        "customer": "Industrial Solutions GmbH",
+        "value": 23248,
+        "status": "Pending",
+        "date": "2025-11-05"
+      },
+      {
+        "id": "SO-2026-030",
+        "customer": "Global Parts Co",
+        "value": 95449,
+        "status": "Active",
+        "date": "2025-10-26"
+      },
+      {
+        "id": "SO-2026-031",
+        "customer": "TechCorp Ltd",
+        "value": 102611,
+        "status": "Pending",
+        "date": "2025-10-25"
+      },
+      {
+        "id": "SO-2026-032",
+        "customer": "TechCorp Ltd",
+        "value": 11571,
+        "status": "Pending",
+        "date": "2025-12-30"
+      },
+      {
+        "id": "SO-2026-033",
+        "customer": "Precision Engineering Ltd",
+        "value": 105834,
+        "status": "Shipped",
+        "date": "2025-12-30"
+      },
+      {
+        "id": "SO-2026-034",
+        "customer": "Manufacturing Inc",
+        "value": 142991,
         "status": "Completed",
-        "date": "2025-10-29"
+        "date": "2025-12-17"
+      },
+      {
+        "id": "SO-2026-035",
+        "customer": "Industrial Solutions GmbH",
+        "value": 50044,
+        "status": "Completed",
+        "date": "2026-01-01"
+      },
+      {
+        "id": "SO-2026-036",
+        "customer": "Precision Engineering Ltd",
+        "value": 148537,
+        "status": "Pending",
+        "date": "2025-10-26"
+      },
+      {
+        "id": "SO-2026-037",
+        "customer": "Manufacturing Inc",
+        "value": 96335,
+        "status": "Pending",
+        "date": "2026-01-02"
+      },
+      {
+        "id": "SO-2026-038",
+        "customer": "Precision Engineering Ltd",
+        "value": 66310,
+        "status": "Completed",
+        "date": "2025-11-08"
+      },
+      {
+        "id": "SO-2026-039",
+        "customer": "Global Parts Co",
+        "value": 84468,
+        "status": "Active",
+        "date": "2025-11-14"
+      },
+      {
+        "id": "SO-2026-040",
+        "customer": "Global Parts Co",
+        "value": 26726,
+        "status": "Active",
+        "date": "2025-10-10"
+      },
+      {
+        "id": "SO-2026-041",
+        "customer": "Industrial Solutions GmbH",
+        "value": 141511,
+        "status": "Shipped",
+        "date": "2025-11-16"
+      },
+      {
+        "id": "SO-2026-042",
+        "customer": "Manufacturing Inc",
+        "value": 85506,
+        "status": "Shipped",
+        "date": "2025-12-18"
+      },
+      {
+        "id": "SO-2026-043",
+        "customer": "Manufacturing Inc",
+        "value": 61090,
+        "status": "Pending",
+        "date": "2025-12-03"
+      },
+      {
+        "id": "SO-2026-044",
+        "customer": "Precision Engineering Ltd",
+        "value": 47524,
+        "status": "Pending",
+        "date": "2025-12-22"
+      },
+      {
+        "id": "SO-2026-045",
+        "customer": "TechCorp Ltd",
+        "value": 63548,
+        "status": "Shipped",
+        "date": "2025-11-13"
+      },
+      {
+        "id": "SO-2026-046",
+        "customer": "Industrial Solutions GmbH",
+        "value": 123821,
+        "status": "Active",
+        "date": "2025-10-13"
+      },
+      {
+        "id": "SO-2026-047",
+        "customer": "TechCorp Ltd",
+        "value": 53033,
+        "status": "Completed",
+        "date": "2025-12-21"
+      },
+      {
+        "id": "SO-2026-048",
+        "customer": "Manufacturing Inc",
+        "value": 11029,
+        "status": "Completed",
+        "date": "2025-11-19"
+      },
+      {
+        "id": "SO-2026-049",
+        "customer": "Precision Engineering Ltd",
+        "value": 130916,
+        "status": "Completed",
+        "date": "2025-10-31"
       },
       {
         "id": "SO-2026-050",
-        "customer": "Global Parts Co",
-        "value": 13172,
-        "status": "Active",
-        "date": "2025-12-11"
+        "customer": "TechCorp Ltd",
+        "value": 142447,
+        "status": "Pending",
+        "date": "2025-10-31"
       }
     ],
-    "total_value": 3633432,
-    "active_orders": 13,
-    "completed_orders": 10
+    "total_value": 4393276,
+    "active_orders": 11,
+    "completed_orders": 11
   },
   "purchasing": {
     "orders": [
       {
         "id": "PO-2026-001",
         "supplier": "Precision Manufacturing",
-        "value": 51712,
+        "value": 74508,
         "status": "Ordered",
-        "date": "2025-11-07"
+        "date": "2025-12-03"
       },
       {
         "id": "PO-2026-002",
-        "supplier": "Precision Manufacturing",
-        "value": 53681,
+        "supplier": "Quality Suppliers Inc",
+        "value": 3054,
         "status": "Ordered",
-        "date": "2025-12-14"
-      },
-      {
-        "id": "PO-2026-003",
-        "supplier": "Global Components",
-        "value": 14269,
-        "status": "Backordered",
         "date": "2026-01-02"
       },
       {
+        "id": "PO-2026-003",
+        "supplier": "Precision Manufacturing",
+        "value": 40284,
+        "status": "Received",
+        "date": "2025-12-09"
+      },
+      {
         "id": "PO-2026-004",
-        "supplier": "Quality Suppliers Inc",
-        "value": 9859,
-        "status": "Ordered",
-        "date": "2025-11-05"
+        "supplier": "Global Components",
+        "value": 23980,
+        "status": "Pending",
+        "date": "2025-12-12"
       },
       {
         "id": "PO-2026-005",
-        "supplier": "Quality Suppliers Inc",
-        "value": 44228,
-        "status": "Backordered",
-        "date": "2025-11-20"
+        "supplier": "Industrial Parts Ltd",
+        "value": 42786,
+        "status": "Ordered",
+        "date": "2025-11-09"
       },
       {
         "id": "PO-2026-006",
         "supplier": "Global Components",
-        "value": 40188,
-        "status": "Backordered",
-        "date": "2025-12-17"
+        "value": 58018,
+        "status": "Pending",
+        "date": "2025-11-18"
       },
       {
         "id": "PO-2026-007",
-        "supplier": "Precision Manufacturing",
-        "value": 35541,
-        "status": "Backordered",
-        "date": "2025-11-11"
+        "supplier": "Industrial Parts Ltd",
+        "value": 34247,
+        "status": "Received",
+        "date": "2025-11-14"
       },
       {
         "id": "PO-2026-008",
-        "supplier": "Quality Suppliers Inc",
-        "value": 56231,
-        "status": "Ordered",
-        "date": "2025-12-14"
+        "supplier": "Precision Manufacturing",
+        "value": 60918,
+        "status": "Pending",
+        "date": "2025-12-06"
       },
       {
         "id": "PO-2026-009",
-        "supplier": "Precision Manufacturing",
-        "value": 52014,
-        "status": "Received",
-        "date": "2025-12-12"
+        "supplier": "Global Components",
+        "value": 4058,
+        "status": "Ordered",
+        "date": "2025-12-03"
       },
       {
         "id": "PO-2026-010",
-        "supplier": "Global Components",
-        "value": 13976,
-        "status": "Received",
-        "date": "2025-12-01"
+        "supplier": "Precision Manufacturing",
+        "value": 30330,
+        "status": "Pending",
+        "date": "2025-12-31"
       },
       {
         "id": "PO-2026-011",
         "supplier": "Precision Manufacturing",
-        "value": 31515,
+        "value": 56248,
         "status": "Ordered",
         "date": "2025-12-29"
       },
       {
         "id": "PO-2026-012",
         "supplier": "Quality Suppliers Inc",
-        "value": 67986,
-        "status": "Pending",
-        "date": "2025-11-20"
+        "value": 65426,
+        "status": "Ordered",
+        "date": "2025-12-04"
       },
       {
         "id": "PO-2026-013",
-        "supplier": "Global Components",
-        "value": 54843,
-        "status": "Received",
-        "date": "2025-11-30"
+        "supplier": "Industrial Parts Ltd",
+        "value": 18759,
+        "status": "Pending",
+        "date": "2025-11-14"
       },
       {
         "id": "PO-2026-014",
-        "supplier": "Precision Manufacturing",
-        "value": 46114,
-        "status": "Received",
-        "date": "2025-12-12"
+        "supplier": "Global Components",
+        "value": 43485,
+        "status": "Backordered",
+        "date": "2025-11-10"
       },
       {
         "id": "PO-2026-015",
-        "supplier": "Global Components",
-        "value": 52555,
-        "status": "Ordered",
-        "date": "2025-11-27"
-      },
-      {
-        "id": "PO-2026-016",
-        "supplier": "Global Components",
-        "value": 73678,
+        "supplier": "Quality Suppliers Inc",
+        "value": 79712,
         "status": "Ordered",
         "date": "2025-12-17"
       },
       {
-        "id": "PO-2026-017",
-        "supplier": "Precision Manufacturing",
-        "value": 14552,
-        "status": "Received",
+        "id": "PO-2026-016",
+        "supplier": "Quality Suppliers Inc",
+        "value": 7556,
+        "status": "Backordered",
         "date": "2025-11-28"
+      },
+      {
+        "id": "PO-2026-017",
+        "supplier": "Industrial Parts Ltd",
+        "value": 76833,
+        "status": "Ordered",
+        "date": "2025-11-23"
       },
       {
         "id": "PO-2026-018",
         "supplier": "Quality Suppliers Inc",
-        "value": 33089,
-        "status": "Ordered",
-        "date": "2025-12-17"
+        "value": 53054,
+        "status": "Backordered",
+        "date": "2026-01-03"
       },
       {
         "id": "PO-2026-019",
-        "supplier": "Quality Suppliers Inc",
-        "value": 72021,
-        "status": "Backordered",
-        "date": "2025-11-23"
+        "supplier": "Global Components",
+        "value": 73968,
+        "status": "Pending",
+        "date": "2025-12-01"
       },
       {
         "id": "PO-2026-020",
         "supplier": "Quality Suppliers Inc",
-        "value": 41676,
-        "status": "Backordered",
-        "date": "2025-11-12"
+        "value": 10753,
+        "status": "Received",
+        "date": "2025-12-10"
       },
       {
         "id": "PO-2026-021",
         "supplier": "Precision Manufacturing",
-        "value": 38760,
+        "value": 73685,
         "status": "Ordered",
-        "date": "2025-11-11"
+        "date": "2025-11-25"
       },
       {
         "id": "PO-2026-022",
-        "supplier": "Industrial Parts Ltd",
-        "value": 32727,
+        "supplier": "Global Components",
+        "value": 64596,
         "status": "Received",
-        "date": "2025-11-13"
+        "date": "2025-12-30"
       },
       {
         "id": "PO-2026-023",
-        "supplier": "Precision Manufacturing",
-        "value": 75441,
-        "status": "Backordered",
-        "date": "2025-11-22"
+        "supplier": "Quality Suppliers Inc",
+        "value": 45899,
+        "status": "Pending",
+        "date": "2025-12-08"
       },
       {
         "id": "PO-2026-024",
-        "supplier": "Industrial Parts Ltd",
-        "value": 25881,
-        "status": "Pending",
-        "date": "2025-12-03"
+        "supplier": "Global Components",
+        "value": 67222,
+        "status": "Ordered",
+        "date": "2025-12-29"
       },
       {
         "id": "PO-2026-025",
-        "supplier": "Quality Suppliers Inc",
-        "value": 45620,
-        "status": "Received",
-        "date": "2025-12-27"
+        "supplier": "Precision Manufacturing",
+        "value": 63817,
+        "status": "Pending",
+        "date": "2025-12-08"
       },
       {
         "id": "PO-2026-026",
-        "supplier": "Industrial Parts Ltd",
-        "value": 5602,
+        "supplier": "Quality Suppliers Inc",
+        "value": 73788,
         "status": "Received",
-        "date": "2025-11-21"
+        "date": "2025-12-20"
       },
       {
         "id": "PO-2026-027",
-        "supplier": "Precision Manufacturing",
-        "value": 5042,
-        "status": "Received",
-        "date": "2025-11-20"
+        "supplier": "Quality Suppliers Inc",
+        "value": 14908,
+        "status": "Pending",
+        "date": "2026-01-03"
       },
       {
         "id": "PO-2026-028",
-        "supplier": "Quality Suppliers Inc",
-        "value": 43416,
-        "status": "Backordered",
-        "date": "2025-11-07"
+        "supplier": "Industrial Parts Ltd",
+        "value": 33438,
+        "status": "Ordered",
+        "date": "2025-12-06"
       },
       {
         "id": "PO-2026-029",
-        "supplier": "Industrial Parts Ltd",
-        "value": 35991,
-        "status": "Pending",
-        "date": "2025-11-19"
+        "supplier": "Precision Manufacturing",
+        "value": 48951,
+        "status": "Received",
+        "date": "2025-11-05"
       },
       {
         "id": "PO-2026-030",
-        "supplier": "Quality Suppliers Inc",
-        "value": 64234,
-        "status": "Pending",
-        "date": "2025-12-31"
+        "supplier": "Precision Manufacturing",
+        "value": 79561,
+        "status": "Ordered",
+        "date": "2025-11-15"
       },
       {
         "id": "PO-2026-031",
-        "supplier": "Quality Suppliers Inc",
-        "value": 14094,
-        "status": "Pending",
-        "date": "2026-01-04"
+        "supplier": "Global Components",
+        "value": 47921,
+        "status": "Ordered",
+        "date": "2025-12-22"
       },
       {
         "id": "PO-2026-032",
-        "supplier": "Global Components",
-        "value": 69322,
-        "status": "Pending",
-        "date": "2025-12-02"
+        "supplier": "Industrial Parts Ltd",
+        "value": 38352,
+        "status": "Received",
+        "date": "2025-11-27"
       },
       {
         "id": "PO-2026-033",
         "supplier": "Precision Manufacturing",
-        "value": 18721,
-        "status": "Ordered",
-        "date": "2026-01-04"
+        "value": 56646,
+        "status": "Backordered",
+        "date": "2025-11-26"
       },
       {
         "id": "PO-2026-034",
-        "supplier": "Industrial Parts Ltd",
-        "value": 13521,
+        "supplier": "Quality Suppliers Inc",
+        "value": 17711,
         "status": "Received",
-        "date": "2025-12-19"
+        "date": "2025-11-12"
       },
       {
         "id": "PO-2026-035",
-        "supplier": "Precision Manufacturing",
-        "value": 21155,
-        "status": "Received",
-        "date": "2025-12-30"
+        "supplier": "Industrial Parts Ltd",
+        "value": 58478,
+        "status": "Pending",
+        "date": "2025-11-22"
       }
     ],
-    "total_value": 1369255,
-    "pending_orders": 6,
-    "received_orders": 11
+    "total_value": 1642950,
+    "pending_orders": 10,
+    "received_orders": 8
   },
   "operations": {
     "projects": [
       {
         "id": "PRJ-2026-001",
-        "name": "Process Optimization",
-        "customer": "Defense Systems",
+        "name": "Automation Upgrade",
+        "customer": "Aviation Corp",
         "status": "Active",
-        "progress": 66,
-        "value": 415050
+        "progress": 87,
+        "value": 86328
       },
       {
         "id": "PRJ-2026-002",
-        "name": "Process Optimization",
-        "customer": "Manufacturing Giant",
+        "name": "Engine Assembly Line",
+        "customer": "Aviation Corp",
         "status": "Planning",
-        "progress": 42,
-        "value": 157639
+        "progress": 20,
+        "value": 332325
       },
       {
         "id": "PRJ-2026-003",
-        "name": "Safety Compliance",
+        "name": "Quality Control System",
         "customer": "Commercial Airlines",
         "status": "Active",
-        "progress": 58,
-        "value": 211532
+        "progress": 19,
+        "value": 192443
       },
       {
         "id": "PRJ-2026-004",
-        "name": "Process Optimization",
-        "customer": "Commercial Airlines",
-        "status": "Completed",
-        "progress": 31,
-        "value": 307249
+        "name": "Automation Upgrade",
+        "customer": "Defense Systems",
+        "status": "Planning",
+        "progress": 68,
+        "value": 397470
       },
       {
         "id": "PRJ-2026-005",
-        "name": "Safety Compliance",
-        "customer": "Commercial Airlines",
-        "status": "Completed",
-        "progress": 27,
-        "value": 140169
+        "name": "Process Optimization",
+        "customer": "Aviation Corp",
+        "status": "Planning",
+        "progress": 90,
+        "value": 355817
       },
       {
         "id": "PRJ-2026-006",
-        "name": "Process Optimization",
-        "customer": "Defense Systems",
+        "name": "Safety Compliance",
+        "customer": "Manufacturing Giant",
         "status": "On Hold",
-        "progress": 18,
-        "value": 226801
+        "progress": 85,
+        "value": 294967
       },
       {
         "id": "PRJ-2026-007",
         "name": "Process Optimization",
-        "customer": "Commercial Airlines",
+        "customer": "Defense Systems",
         "status": "Active",
-        "progress": 85,
-        "value": 183781
+        "progress": 51,
+        "value": 360779
       },
       {
         "id": "PRJ-2026-008",
         "name": "Quality Control System",
         "customer": "Commercial Airlines",
-        "status": "On Hold",
-        "progress": 44,
-        "value": 381902
+        "status": "Active",
+        "progress": 77,
+        "value": 460410
       },
       {
         "id": "PRJ-2026-009",
-        "name": "Quality Control System",
-        "customer": "Aviation Corp",
-        "status": "Completed",
-        "progress": 13,
-        "value": 286038
+        "name": "Process Optimization",
+        "customer": "Manufacturing Giant",
+        "status": "On Hold",
+        "progress": 37,
+        "value": 177029
       },
       {
         "id": "PRJ-2026-010",
         "name": "Quality Control System",
-        "customer": "Commercial Airlines",
-        "status": "Active",
-        "progress": 53,
-        "value": 462484
+        "customer": "Manufacturing Giant",
+        "status": "Planning",
+        "progress": 71,
+        "value": 353368
       },
       {
         "id": "PRJ-2026-011",
-        "name": "Automation Upgrade",
-        "customer": "Defense Systems",
+        "name": "Engine Assembly Line",
+        "customer": "Commercial Airlines",
         "status": "Active",
-        "progress": 90,
-        "value": 62837
+        "progress": 36,
+        "value": 139290
       },
       {
         "id": "PRJ-2026-012",
-        "name": "Safety Compliance",
-        "customer": "Commercial Airlines",
-        "status": "On Hold",
-        "progress": 23,
-        "value": 472659
+        "name": "Quality Control System",
+        "customer": "Aviation Corp",
+        "status": "Completed",
+        "progress": 59,
+        "value": 181280
       },
       {
         "id": "PRJ-2026-013",
-        "name": "Automation Upgrade",
-        "customer": "Defense Systems",
-        "status": "Completed",
-        "progress": 63,
-        "value": 181276
+        "name": "Quality Control System",
+        "customer": "Manufacturing Giant",
+        "status": "Planning",
+        "progress": 11,
+        "value": 232314
       },
       {
         "id": "PRJ-2026-014",
-        "name": "Safety Compliance",
-        "customer": "Manufacturing Giant",
-        "status": "On Hold",
-        "progress": 23,
-        "value": 202953
+        "name": "Quality Control System",
+        "customer": "Defense Systems",
+        "status": "Active",
+        "progress": 37,
+        "value": 190922
       },
       {
         "id": "PRJ-2026-015",
         "name": "Safety Compliance",
         "customer": "Defense Systems",
-        "status": "On Hold",
-        "progress": 42,
-        "value": 418993
+        "status": "Completed",
+        "progress": 75,
+        "value": 285978
       },
       {
         "id": "PRJ-2026-016",
-        "name": "Process Optimization",
+        "name": "Safety Compliance",
         "customer": "Defense Systems",
         "status": "On Hold",
-        "progress": 35,
-        "value": 82930
+        "progress": 87,
+        "value": 413601
       },
       {
         "id": "PRJ-2026-017",
-        "name": "Automation Upgrade",
+        "name": "Safety Compliance",
         "customer": "Manufacturing Giant",
-        "status": "Completed",
-        "progress": 78,
-        "value": 342864
+        "status": "Planning",
+        "progress": 59,
+        "value": 465741
       },
       {
         "id": "PRJ-2026-018",
-        "name": "Engine Assembly Line",
-        "customer": "Aviation Corp",
-        "status": "Active",
-        "progress": 50,
-        "value": 402611
+        "name": "Safety Compliance",
+        "customer": "Defense Systems",
+        "status": "Completed",
+        "progress": 33,
+        "value": 232894
       },
       {
         "id": "PRJ-2026-019",
-        "name": "Engine Assembly Line",
+        "name": "Automation Upgrade",
         "customer": "Defense Systems",
         "status": "Completed",
-        "progress": 52,
-        "value": 344706
+        "progress": 66,
+        "value": 116650
       },
       {
         "id": "PRJ-2026-020",
-        "name": "Process Optimization",
-        "customer": "Defense Systems",
-        "status": "Completed",
-        "progress": 15,
-        "value": 285100
+        "name": "Quality Control System",
+        "customer": "Commercial Airlines",
+        "status": "On Hold",
+        "progress": 71,
+        "value": 203772
       },
       {
         "id": "PRJ-2026-021",
-        "name": "Safety Compliance",
-        "customer": "Manufacturing Giant",
-        "status": "Active",
-        "progress": 85,
-        "value": 416513
+        "name": "Automation Upgrade",
+        "customer": "Commercial Airlines",
+        "status": "On Hold",
+        "progress": 32,
+        "value": 272204
       },
       {
         "id": "PRJ-2026-022",
-        "name": "Engine Assembly Line",
-        "customer": "Defense Systems",
-        "status": "Completed",
-        "progress": 67,
-        "value": 333913
+        "name": "Process Optimization",
+        "customer": "Aviation Corp",
+        "status": "Active",
+        "progress": 54,
+        "value": 97770
       },
       {
         "id": "PRJ-2026-023",
         "name": "Engine Assembly Line",
-        "customer": "Defense Systems",
+        "customer": "Aviation Corp",
         "status": "Completed",
-        "progress": 66,
-        "value": 357257
+        "progress": 75,
+        "value": 446047
       },
       {
         "id": "PRJ-2026-024",
-        "name": "Safety Compliance",
-        "customer": "Manufacturing Giant",
-        "status": "Active",
-        "progress": 41,
-        "value": 197085
+        "name": "Automation Upgrade",
+        "customer": "Aviation Corp",
+        "status": "Completed",
+        "progress": 60,
+        "value": 71409
       },
       {
         "id": "PRJ-2026-025",
-        "name": "Process Optimization",
-        "customer": "Commercial Airlines",
+        "name": "Quality Control System",
+        "customer": "Manufacturing Giant",
         "status": "Active",
-        "progress": 94,
-        "value": 266011
+        "progress": 27,
+        "value": 50849
       }
     ],
-    "active_projects": 9,
-    "completed_projects": 9,
-    "total_value": 7140353
+    "active_projects": 8,
+    "completed_projects": 6,
+    "total_value": 6411657
   },
   "prospecting": {
     "prospects": [
       {
         "id": "PROS-2026-001",
-        "company": "Precision Components Ltd",
-        "industry": "Defense",
+        "company": "Quality Parts GmbH",
+        "industry": "Aerospace",
         "contact": "Contact 1",
         "email": "contact1@example.com",
-        "source": "Email Integration",
-        "score": 62,
-        "status": "New",
-        "potential_value": 100718,
-        "last_activity": "2025-12-09"
+        "source": "Industry Database",
+        "score": 94,
+        "status": "Qualified",
+        "potential_value": 191206,
+        "last_activity": "2025-12-29"
       },
       {
         "id": "PROS-2026-002",
-        "company": "Advanced Systems Inc",
-        "industry": "Aerospace",
+        "company": "SkyTech Industries",
+        "industry": "Energy",
         "contact": "Contact 2",
         "email": "contact2@example.com",
-        "source": "Industry Database",
-        "score": 60,
-        "status": "Qualified",
-        "potential_value": 76381,
-        "last_activity": "2026-01-02"
+        "source": "Web Scraping",
+        "score": 66,
+        "status": "Proposal",
+        "potential_value": 87653,
+        "last_activity": "2025-12-22"
       },
       {
         "id": "PROS-2026-003",
-        "company": "Global Manufacturing Corp",
-        "industry": "Aerospace",
+        "company": "SkyTech Industries",
+        "industry": "Commercial Aviation",
         "contact": "Contact 3",
         "email": "contact3@example.com",
-        "source": "Industry Database",
-        "score": 70,
-        "status": "Qualified",
-        "potential_value": 182247,
-        "last_activity": "2025-12-14"
+        "source": "Email Integration",
+        "score": 90,
+        "status": "Proposal",
+        "potential_value": 179043,
+        "last_activity": "2026-01-01"
       },
       {
         "id": "PROS-2026-004",
         "company": "Precision Components Ltd",
-        "industry": "Commercial Aviation",
+        "industry": "Aerospace",
         "contact": "Contact 4",
         "email": "contact4@example.com",
-        "source": "Social Media",
-        "score": 67,
-        "status": "New",
-        "potential_value": 101379,
-        "last_activity": "2025-12-26"
+        "source": "Email Integration",
+        "score": 60,
+        "status": "Qualified",
+        "potential_value": 86474,
+        "last_activity": "2025-12-09"
       },
       {
         "id": "PROS-2026-005",
-        "company": "Precision Components Ltd",
-        "industry": "Aerospace",
+        "company": "Advanced Systems Inc",
+        "industry": "Commercial Aviation",
         "contact": "Contact 5",
         "email": "contact5@example.com",
         "source": "Web Scraping",
-        "score": 94,
-        "status": "Contacted",
-        "potential_value": 129627,
-        "last_activity": "2025-12-14"
+        "score": 92,
+        "status": "New",
+        "potential_value": 158403,
+        "last_activity": "2026-01-02"
       },
       {
         "id": "PROS-2026-006",
-        "company": "Global Manufacturing Corp",
-        "industry": "Aerospace",
+        "company": "Advanced Systems Inc",
+        "industry": "Energy",
         "contact": "Contact 6",
         "email": "contact6@example.com",
-        "source": "Existing Customer Analysis",
-        "score": 69,
-        "status": "Proposal",
-        "potential_value": 146774,
-        "last_activity": "2026-01-01"
+        "source": "Industry Database",
+        "score": 92,
+        "status": "Contacted",
+        "potential_value": 162843,
+        "last_activity": "2025-12-26"
       },
       {
         "id": "PROS-2026-007",
-        "company": "Precision Components Ltd",
+        "company": "Advanced Systems Inc",
         "industry": "Energy",
         "contact": "Contact 7",
         "email": "contact7@example.com",
-        "source": "Email Integration",
-        "score": 86,
-        "status": "Qualified",
-        "potential_value": 82036,
-        "last_activity": "2025-12-13"
+        "source": "Industry Database",
+        "score": 80,
+        "status": "New",
+        "potential_value": 181233,
+        "last_activity": "2025-12-10"
       },
       {
         "id": "PROS-2026-008",
-        "company": "SkyTech Industries",
+        "company": "Global Manufacturing Corp",
         "industry": "Commercial Aviation",
         "contact": "Contact 8",
         "email": "contact8@example.com",
         "source": "Email Integration",
-        "score": 95,
-        "status": "New",
-        "potential_value": 120966,
-        "last_activity": "2026-01-01"
+        "score": 78,
+        "status": "Contacted",
+        "potential_value": 166288,
+        "last_activity": "2025-12-12"
       },
       {
         "id": "PROS-2026-009",
-        "company": "Quality Parts GmbH",
+        "company": "Global Manufacturing Corp",
         "industry": "Defense",
         "contact": "Contact 9",
         "email": "contact9@example.com",
-        "source": "Email Integration",
-        "score": 95,
-        "status": "Qualified",
-        "potential_value": 67193,
-        "last_activity": "2025-12-31"
+        "source": "Web Scraping",
+        "score": 77,
+        "status": "Contacted",
+        "potential_value": 59478,
+        "last_activity": "2025-12-24"
       },
       {
         "id": "PROS-2026-010",
-        "company": "Advanced Systems Inc",
-        "industry": "Energy",
+        "company": "SkyTech Industries",
+        "industry": "Aerospace",
         "contact": "Contact 10",
         "email": "contact10@example.com",
-        "source": "Social Media",
-        "score": 70,
+        "source": "Email Integration",
+        "score": 83,
         "status": "Closed",
-        "potential_value": 167664,
-        "last_activity": "2025-12-25"
+        "potential_value": 197153,
+        "last_activity": "2026-01-02"
       },
       {
         "id": "PROS-2026-011",
-        "company": "Precision Components Ltd",
-        "industry": "Energy",
+        "company": "SkyTech Industries",
+        "industry": "Manufacturing",
         "contact": "Contact 11",
         "email": "contact11@example.com",
-        "source": "Email Integration",
-        "score": 90,
+        "source": "Social Media",
+        "score": 86,
         "status": "New",
-        "potential_value": 150416,
-        "last_activity": "2026-01-01"
+        "potential_value": 140724,
+        "last_activity": "2025-12-27"
       },
       {
         "id": "PROS-2026-012",
         "company": "Precision Components Ltd",
-        "industry": "Energy",
+        "industry": "Manufacturing",
         "contact": "Contact 12",
         "email": "contact12@example.com",
-        "source": "Web Scraping",
-        "score": 76,
-        "status": "Contacted",
-        "potential_value": 106483,
-        "last_activity": "2025-12-21"
+        "source": "Social Media",
+        "score": 65,
+        "status": "Proposal",
+        "potential_value": 118211,
+        "last_activity": "2025-12-25"
       },
       {
         "id": "PROS-2026-013",
         "company": "Precision Components Ltd",
-        "industry": "Energy",
+        "industry": "Aerospace",
         "contact": "Contact 13",
         "email": "contact13@example.com",
         "source": "Email Integration",
-        "score": 85,
-        "status": "New",
-        "potential_value": 196183,
-        "last_activity": "2025-12-29"
+        "score": 65,
+        "status": "Closed",
+        "potential_value": 66431,
+        "last_activity": "2025-12-23"
       },
       {
         "id": "PROS-2026-014",
-        "company": "Quality Parts GmbH",
+        "company": "Advanced Systems Inc",
         "industry": "Defense",
         "contact": "Contact 14",
         "email": "contact14@example.com",
         "source": "Email Integration",
-        "score": 95,
+        "score": 84,
         "status": "Closed",
-        "potential_value": 54776,
-        "last_activity": "2026-01-01"
+        "potential_value": 146308,
+        "last_activity": "2025-12-16"
       },
       {
         "id": "PROS-2026-015",
-        "company": "Global Manufacturing Corp",
-        "industry": "Manufacturing",
+        "company": "Advanced Systems Inc",
+        "industry": "Defense",
         "contact": "Contact 15",
         "email": "contact15@example.com",
         "source": "Existing Customer Analysis",
-        "score": 66,
-        "status": "Qualified",
-        "potential_value": 141093,
-        "last_activity": "2025-12-20"
+        "score": 87,
+        "status": "Contacted",
+        "potential_value": 194168,
+        "last_activity": "2026-01-03"
       },
       {
         "id": "PROS-2026-016",
-        "company": "Quality Parts GmbH",
-        "industry": "Commercial Aviation",
+        "company": "Precision Components Ltd",
+        "industry": "Aerospace",
         "contact": "Contact 16",
         "email": "contact16@example.com",
-        "source": "Email Integration",
-        "score": 61,
+        "source": "Web Scraping",
+        "score": 82,
         "status": "Contacted",
-        "potential_value": 55829,
-        "last_activity": "2025-12-24"
+        "potential_value": 192951,
+        "last_activity": "2025-12-28"
       },
       {
         "id": "PROS-2026-017",
-        "company": "Advanced Systems Inc",
-        "industry": "Aerospace",
+        "company": "SkyTech Industries",
+        "industry": "Manufacturing",
         "contact": "Contact 17",
         "email": "contact17@example.com",
-        "source": "Existing Customer Analysis",
-        "score": 95,
-        "status": "New",
-        "potential_value": 79928,
-        "last_activity": "2026-01-02"
+        "source": "Web Scraping",
+        "score": 73,
+        "status": "Proposal",
+        "potential_value": 78027,
+        "last_activity": "2025-12-22"
       },
       {
         "id": "PROS-2026-018",
-        "company": "Advanced Systems Inc",
-        "industry": "Manufacturing",
+        "company": "Quality Parts GmbH",
+        "industry": "Energy",
         "contact": "Contact 18",
         "email": "contact18@example.com",
-        "source": "Web Scraping",
-        "score": 60,
-        "status": "Proposal",
-        "potential_value": 190404,
-        "last_activity": "2025-12-24"
+        "source": "Social Media",
+        "score": 76,
+        "status": "Contacted",
+        "potential_value": 73298,
+        "last_activity": "2026-01-03"
       },
       {
         "id": "PROS-2026-019",
-        "company": "Global Manufacturing Corp",
-        "industry": "Commercial Aviation",
+        "company": "SkyTech Industries",
+        "industry": "Manufacturing",
         "contact": "Contact 19",
         "email": "contact19@example.com",
-        "source": "Social Media",
-        "score": 80,
-        "status": "Proposal",
-        "potential_value": 193198,
-        "last_activity": "2025-12-06"
+        "source": "Industry Database",
+        "score": 92,
+        "status": "Qualified",
+        "potential_value": 182188,
+        "last_activity": "2025-12-22"
       },
       {
         "id": "PROS-2026-020",
-        "company": "SkyTech Industries",
-        "industry": "Defense",
+        "company": "Advanced Systems Inc",
+        "industry": "Manufacturing",
         "contact": "Contact 20",
         "email": "contact20@example.com",
-        "source": "Social Media",
-        "score": 79,
-        "status": "New",
-        "potential_value": 84444,
-        "last_activity": "2026-01-03"
+        "source": "Web Scraping",
+        "score": 86,
+        "status": "Closed",
+        "potential_value": 92465,
+        "last_activity": "2026-01-01"
       }
     ],
     "total_prospects": 20,
-    "qualified_leads": 9,
-    "total_potential_value": 2427739
+    "qualified_leads": 12,
+    "total_potential_value": 2754545
   },
   "ai_analysis": {
     "parts_analysis": [
       {
         "part_number": "PT-1000",
-        "part_name": "Servo Motor SM-45",
-        "current_supplier": "Industrial Parts Ltd",
-        "current_price": 1422,
-        "recommended_supplier": "Quality Suppliers Inc",
-        "recommended_price": 538,
-        "savings_potential": 24406,
-        "confidence": 89,
-        "reasoning": "Volume discount available for bulk orders"
-      },
-      {
-        "part_number": "PT-1001",
-        "part_name": "Bearing Assembly 6205",
-        "current_supplier": "Industrial Parts Ltd",
-        "current_price": 4725,
-        "recommended_supplier": "Precision Manufacturing",
-        "recommended_price": 3973,
-        "savings_potential": 9476,
-        "confidence": 92,
-        "reasoning": "Alternative supplier offers 30-day payment terms"
-      },
-      {
-        "part_number": "PT-1002",
-        "part_name": "Control Valve CV-100",
+        "part_name": "Power Supply PS-500",
         "current_supplier": "Precision Manufacturing",
-        "current_price": 4043,
-        "recommended_supplier": "Quality Suppliers Inc",
-        "recommended_price": 2203,
-        "savings_potential": 17845,
-        "confidence": 98,
+        "current_price": 4551,
+        "recommended_supplier": "Global Components",
+        "recommended_price": 3364,
+        "savings_potential": 6339,
+        "confidence": 89,
         "reasoning": "Geographic proximity reduces shipping costs"
       },
       {
-        "part_number": "PT-1003",
+        "part_number": "PT-1001",
         "part_name": "Sensor Array SA-20",
         "current_supplier": "Global Components",
-        "current_price": 3444,
+        "current_price": 2472,
         "recommended_supplier": "Precision Manufacturing",
-        "recommended_price": 3865,
-        "savings_potential": 14650,
+        "recommended_price": 772,
+        "savings_potential": 7538,
+        "confidence": 87,
+        "reasoning": "Volume discount available for bulk orders"
+      },
+      {
+        "part_number": "PT-1002",
+        "part_name": "Hydraulic Pump P-200",
+        "current_supplier": "Industrial Parts Ltd",
+        "current_price": 1907,
+        "recommended_supplier": "Precision Manufacturing",
+        "recommended_price": 3975,
+        "savings_potential": 18937,
+        "confidence": 90,
+        "reasoning": "Alternative supplier offers 30-day payment terms"
+      },
+      {
+        "part_number": "PT-1003",
+        "part_name": "Servo Motor SM-45",
+        "current_supplier": "Precision Manufacturing",
+        "current_price": 996,
+        "recommended_supplier": "Industrial Parts Ltd",
+        "recommended_price": 2818,
+        "savings_potential": 11855,
         "confidence": 88,
         "reasoning": "Better quality rating with 15% lower defect rate"
       },
       {
         "part_number": "PT-1004",
-        "part_name": "Control Valve CV-100",
-        "current_supplier": "Precision Manufacturing",
-        "current_price": 1660,
-        "recommended_supplier": "Global Components",
-        "recommended_price": 3518,
-        "savings_potential": 16588,
-        "confidence": 93,
-        "reasoning": "Geographic proximity reduces shipping costs"
+        "part_name": "Sensor Array SA-20",
+        "current_supplier": "Global Components",
+        "current_price": 4325,
+        "recommended_supplier": "Quality Suppliers Inc",
+        "recommended_price": 3401,
+        "savings_potential": 9973,
+        "confidence": 90,
+        "reasoning": "Volume discount available for bulk orders"
       },
       {
         "part_number": "PT-1005",
-        "part_name": "Sensor Array SA-20",
-        "current_supplier": "Quality Suppliers Inc",
-        "current_price": 1568,
-        "recommended_supplier": "Global Components",
-        "recommended_price": 1602,
-        "savings_potential": 9355,
-        "confidence": 96,
-        "reasoning": "Alternative supplier offers 30-day payment terms"
+        "part_name": "Control Valve CV-100",
+        "current_supplier": "Industrial Parts Ltd",
+        "current_price": 1518,
+        "recommended_supplier": "Quality Suppliers Inc",
+        "recommended_price": 2743,
+        "savings_potential": 24982,
+        "confidence": 92,
+        "reasoning": "Better quality rating with 15% lower defect rate"
       },
       {
         "part_number": "PT-1006",
-        "part_name": "Hydraulic Pump P-200",
-        "current_supplier": "Precision Manufacturing",
-        "current_price": 852,
+        "part_name": "Linear Actuator LA-75",
+        "current_supplier": "Industrial Parts Ltd",
+        "current_price": 2917,
         "recommended_supplier": "Global Components",
-        "recommended_price": 1230,
-        "savings_potential": 20341,
-        "confidence": 85,
+        "recommended_price": 2033,
+        "savings_potential": 21279,
+        "confidence": 88,
         "reasoning": "Better quality rating with 15% lower defect rate"
       },
       {
         "part_number": "PT-1007",
-        "part_name": "Control Valve CV-100",
-        "current_supplier": "Quality Suppliers Inc",
-        "current_price": 1921,
-        "recommended_supplier": "Industrial Parts Ltd",
-        "recommended_price": 1571,
-        "savings_potential": 22967,
+        "part_name": "Bearing Assembly 6205",
+        "current_supplier": "Industrial Parts Ltd",
+        "current_price": 3054,
+        "recommended_supplier": "Precision Manufacturing",
+        "recommended_price": 2171,
+        "savings_potential": 21561,
         "confidence": 95,
-        "reasoning": "Better quality rating with 15% lower defect rate"
+        "reasoning": "Volume discount available for bulk orders"
       },
       {
         "part_number": "PT-1008",
-        "part_name": "Servo Motor SM-45",
+        "part_name": "Power Supply PS-500",
         "current_supplier": "Industrial Parts Ltd",
-        "current_price": 4060,
-        "recommended_supplier": "Quality Suppliers Inc",
-        "recommended_price": 3096,
-        "savings_potential": 12781,
-        "confidence": 97,
-        "reasoning": "Volume discount available for bulk orders"
+        "current_price": 4413,
+        "recommended_supplier": "Global Components",
+        "recommended_price": 1205,
+        "savings_potential": 21515,
+        "confidence": 88,
+        "reasoning": "Better quality rating with 15% lower defect rate"
       },
       {
         "part_number": "PT-1009",
         "part_name": "Sensor Array SA-20",
-        "current_supplier": "Quality Suppliers Inc",
-        "current_price": 4166,
-        "recommended_supplier": "Precision Manufacturing",
-        "recommended_price": 582,
-        "savings_potential": 21025,
-        "confidence": 87,
+        "current_supplier": "Industrial Parts Ltd",
+        "current_price": 1401,
+        "recommended_supplier": "Quality Suppliers Inc",
+        "recommended_price": 2983,
+        "savings_potential": 10350,
+        "confidence": 96,
         "reasoning": "Volume discount available for bulk orders"
       },
       {
         "part_number": "PT-1010",
-        "part_name": "Control Valve CV-100",
-        "current_supplier": "Industrial Parts Ltd",
-        "current_price": 1211,
-        "recommended_supplier": "Global Components",
-        "recommended_price": 2833,
-        "savings_potential": 23424,
-        "confidence": 91,
-        "reasoning": "Alternative supplier offers 30-day payment terms"
+        "part_name": "Sensor Array SA-20",
+        "current_supplier": "Global Components",
+        "current_price": 4616,
+        "recommended_supplier": "Industrial Parts Ltd",
+        "recommended_price": 3381,
+        "savings_potential": 8876,
+        "confidence": 85,
+        "reasoning": "Volume discount available for bulk orders"
       },
       {
         "part_number": "PT-1011",
-        "part_name": "Bearing Assembly 6205",
+        "part_name": "Sensor Array SA-20",
         "current_supplier": "Global Components",
-        "current_price": 2430,
-        "recommended_supplier": "Precision Manufacturing",
-        "recommended_price": 2340,
-        "savings_potential": 11535,
-        "confidence": 86,
-        "reasoning": "Volume discount available for bulk orders"
+        "current_price": 3364,
+        "recommended_supplier": "Industrial Parts Ltd",
+        "recommended_price": 3399,
+        "savings_potential": 14624,
+        "confidence": 91,
+        "reasoning": "Better quality rating with 15% lower defect rate"
       }
     ],
-    "total_savings_potential": 204393,
-    "average_confidence": 91.4
+    "total_savings_potential": 177829,
+    "average_confidence": 89.9
   },
   "price_lists": {
     "items": [
       {
         "part_number": "PT-2000",
-        "description": "Sensor Array SA-20",
-        "base_price": 519,
+        "description": "Servo Motor SM-45",
+        "base_price": 198,
         "customer_type": "Government",
         "discount_percent": 15,
-        "final_price": 441.15,
-        "moq": 100,
-        "lead_time_days": 5,
-        "availability": "On Backorder"
+        "final_price": 168.3,
+        "moq": 1,
+        "lead_time_days": 13,
+        "availability": "4-6 weeks"
       },
       {
         "part_number": "PT-2001",
-        "description": "Sensor Array SA-20",
-        "base_price": 635,
-        "customer_type": "Premium",
-        "discount_percent": 5,
-        "final_price": 603.25,
+        "description": "Linear Actuator LA-75",
+        "base_price": 1787,
+        "customer_type": "Enterprise",
+        "discount_percent": 10,
+        "final_price": 1608.3,
         "moq": 1,
-        "lead_time_days": 8,
+        "lead_time_days": 4,
         "availability": "2-3 weeks"
       },
       {
         "part_number": "PT-2002",
-        "description": "Hydraulic Pump P-200",
-        "base_price": 1194,
-        "customer_type": "Standard",
-        "discount_percent": 0,
-        "final_price": 1194.0,
+        "description": "Bearing Assembly 6205",
+        "base_price": 1795,
+        "customer_type": "Premium",
+        "discount_percent": 5,
+        "final_price": 1705.25,
         "moq": 100,
-        "lead_time_days": 7,
-        "availability": "4-6 weeks"
-      },
-      {
-        "part_number": "PT-2003",
-        "description": "Bearing Assembly 6205",
-        "base_price": 1372,
-        "customer_type": "Government",
-        "discount_percent": 15,
-        "final_price": 1166.2,
-        "moq": 10,
-        "lead_time_days": 6,
-        "availability": "4-6 weeks"
-      },
-      {
-        "part_number": "PT-2004",
-        "description": "Bearing Assembly 6205",
-        "base_price": 1023,
-        "customer_type": "Enterprise",
-        "discount_percent": 10,
-        "final_price": 920.7,
-        "moq": 10,
-        "lead_time_days": 9,
-        "availability": "On Backorder"
-      },
-      {
-        "part_number": "PT-2005",
-        "description": "Gearbox Unit G-300",
-        "base_price": 390,
-        "customer_type": "Government",
-        "discount_percent": 15,
-        "final_price": 331.5,
-        "moq": 25,
         "lead_time_days": 4,
         "availability": "4-6 weeks"
       },
       {
-        "part_number": "PT-2006",
-        "description": "Hydraulic Pump P-200",
-        "base_price": 1088,
+        "part_number": "PT-2003",
+        "description": "Power Supply PS-500",
+        "base_price": 1087,
+        "customer_type": "Standard",
+        "discount_percent": 0,
+        "final_price": 1087.0,
+        "moq": 50,
+        "lead_time_days": 12,
+        "availability": "In Stock"
+      },
+      {
+        "part_number": "PT-2004",
+        "description": "Control Valve CV-100",
+        "base_price": 1574,
         "customer_type": "Enterprise",
         "discount_percent": 10,
-        "final_price": 979.2,
-        "moq": 10,
+        "final_price": 1416.6,
+        "moq": 100,
+        "lead_time_days": 10,
+        "availability": "2-3 weeks"
+      },
+      {
+        "part_number": "PT-2005",
+        "description": "Sensor Array SA-20",
+        "base_price": 1429,
+        "customer_type": "Enterprise",
+        "discount_percent": 10,
+        "final_price": 1286.1,
+        "moq": 50,
+        "lead_time_days": 10,
+        "availability": "On Backorder"
+      },
+      {
+        "part_number": "PT-2006",
+        "description": "Linear Actuator LA-75",
+        "base_price": 1282,
+        "customer_type": "Government",
+        "discount_percent": 15,
+        "final_price": 1089.7,
+        "moq": 100,
         "lead_time_days": 14,
-        "availability": "4-6 weeks"
+        "availability": "On Backorder"
       },
       {
         "part_number": "PT-2007",
-        "description": "Bearing Assembly 6205",
-        "base_price": 1958,
-        "customer_type": "Enterprise",
-        "discount_percent": 10,
-        "final_price": 1762.2,
+        "description": "Servo Motor SM-45",
+        "base_price": 224,
+        "customer_type": "Standard",
+        "discount_percent": 0,
+        "final_price": 224.0,
         "moq": 25,
-        "lead_time_days": 7,
-        "availability": "In Stock"
+        "lead_time_days": 4,
+        "availability": "On Backorder"
       }
     ],
     "customer_types": [
@@ -1649,137 +1649,137 @@
       {
         "order_number": "ORD-2026-0001",
         "date": "2025-11-17",
-        "status": "Processing",
-        "total_value": 25733,
-        "items_count": 3,
-        "tracking_number": "TR987635121",
-        "estimated_delivery": "2025-12-03"
+        "status": "Delivered",
+        "total_value": 49781,
+        "items_count": 4,
+        "tracking_number": "TR225610816",
+        "estimated_delivery": "2025-12-02"
       },
       {
         "order_number": "ORD-2026-0002",
-        "date": "2025-12-30",
-        "status": "On Hold",
-        "total_value": 20271,
-        "items_count": 2,
-        "tracking_number": "TR879107639",
-        "estimated_delivery": "2026-01-08"
+        "date": "2025-11-12",
+        "status": "Shipped",
+        "total_value": 38432,
+        "items_count": 9,
+        "tracking_number": "TR175930094",
+        "estimated_delivery": "2025-11-19"
       },
       {
         "order_number": "ORD-2026-0003",
-        "date": "2025-12-18",
-        "status": "Processing",
-        "total_value": 5434,
-        "items_count": 3,
-        "tracking_number": null,
-        "estimated_delivery": "2025-12-29"
+        "date": "2025-11-13",
+        "status": "On Hold",
+        "total_value": 7662,
+        "items_count": 4,
+        "tracking_number": "TR372064631",
+        "estimated_delivery": "2025-11-28"
       },
       {
         "order_number": "ORD-2026-0004",
-        "date": "2025-12-05",
+        "date": "2025-11-17",
         "status": "Shipped",
-        "total_value": 23550,
-        "items_count": 5,
-        "tracking_number": "TR637872623",
-        "estimated_delivery": "2025-12-08"
+        "total_value": 17526,
+        "items_count": 6,
+        "tracking_number": "TR885485247",
+        "estimated_delivery": "2025-11-24"
       },
       {
         "order_number": "ORD-2026-0005",
-        "date": "2025-11-22",
-        "status": "Processing",
-        "total_value": 28308,
+        "date": "2025-12-09",
+        "status": "Cancelled",
+        "total_value": 37643,
         "items_count": 8,
-        "tracking_number": "TR541184555",
-        "estimated_delivery": "2025-12-07"
+        "tracking_number": "TR554538525",
+        "estimated_delivery": "2025-12-14"
       },
       {
         "order_number": "ORD-2026-0006",
-        "date": "2025-12-11",
-        "status": "Cancelled",
-        "total_value": 46358,
-        "items_count": 5,
-        "tracking_number": null,
-        "estimated_delivery": "2025-12-15"
+        "date": "2025-11-25",
+        "status": "Processing",
+        "total_value": 22637,
+        "items_count": 9,
+        "tracking_number": "TR291037543",
+        "estimated_delivery": "2025-12-10"
       },
       {
         "order_number": "ORD-2026-0007",
-        "date": "2025-12-16",
+        "date": "2025-12-24",
         "status": "On Hold",
-        "total_value": 7567,
-        "items_count": 2,
-        "tracking_number": "TR707201689",
-        "estimated_delivery": "2026-01-01"
+        "total_value": 28701,
+        "items_count": 9,
+        "tracking_number": null,
+        "estimated_delivery": null
       },
       {
         "order_number": "ORD-2026-0008",
-        "date": "2025-12-16",
-        "status": "Processing",
-        "total_value": 49368,
-        "items_count": 2,
-        "tracking_number": "TR525117056",
-        "estimated_delivery": "2025-12-26"
+        "date": "2025-11-26",
+        "status": "Delivered",
+        "total_value": 44754,
+        "items_count": 5,
+        "tracking_number": "TR988580602",
+        "estimated_delivery": "2025-12-05"
       },
       {
         "order_number": "ORD-2026-0009",
-        "date": "2025-11-14",
-        "status": "On Hold",
-        "total_value": 18937,
+        "date": "2025-11-18",
+        "status": "Cancelled",
+        "total_value": 35040,
         "items_count": 4,
-        "tracking_number": "TR209691852",
-        "estimated_delivery": "2025-11-30"
+        "tracking_number": "TR547461940",
+        "estimated_delivery": "2025-11-26"
       },
       {
         "order_number": "ORD-2026-0010",
-        "date": "2025-12-29",
-        "status": "Delivered",
-        "total_value": 22836,
-        "items_count": 8,
-        "tracking_number": "TR226638958",
-        "estimated_delivery": "2026-01-03"
+        "date": "2025-12-18",
+        "status": "On Hold",
+        "total_value": 24922,
+        "items_count": 6,
+        "tracking_number": "TR871911176",
+        "estimated_delivery": "2025-12-23"
       },
       {
         "order_number": "ORD-2026-0011",
-        "date": "2025-11-23",
-        "status": "Delivered",
-        "total_value": 11938,
+        "date": "2025-11-15",
+        "status": "Shipped",
+        "total_value": 10486,
         "items_count": 4,
-        "tracking_number": null,
-        "estimated_delivery": null
+        "tracking_number": "TR572041026",
+        "estimated_delivery": "2025-11-21"
       },
       {
         "order_number": "ORD-2026-0012",
-        "date": "2025-11-30",
-        "status": "Delivered",
-        "total_value": 24781,
-        "items_count": 10,
-        "tracking_number": null,
-        "estimated_delivery": null
+        "date": "2025-12-16",
+        "status": "Processing",
+        "total_value": 32594,
+        "items_count": 5,
+        "tracking_number": "TR338905075",
+        "estimated_delivery": "2026-01-06"
       },
       {
         "order_number": "ORD-2026-0013",
-        "date": "2025-12-20",
-        "status": "Delivered",
-        "total_value": 48791,
+        "date": "2026-01-03",
+        "status": "On Hold",
+        "total_value": 45168,
         "items_count": 6,
-        "tracking_number": "TR123372274",
-        "estimated_delivery": null
+        "tracking_number": "TR220406609",
+        "estimated_delivery": "2026-01-24"
       },
       {
         "order_number": "ORD-2026-0014",
-        "date": "2025-12-09",
-        "status": "Cancelled",
-        "total_value": 27082,
-        "items_count": 6,
-        "tracking_number": "TR479685138",
-        "estimated_delivery": "2025-12-24"
+        "date": "2025-12-31",
+        "status": "Delivered",
+        "total_value": 10930,
+        "items_count": 10,
+        "tracking_number": "TR991853414",
+        "estimated_delivery": "2026-01-19"
       },
       {
         "order_number": "ORD-2026-0015",
-        "date": "2025-12-02",
-        "status": "On Hold",
-        "total_value": 47400,
-        "items_count": 3,
-        "tracking_number": "TR677309546",
-        "estimated_delivery": null
+        "date": "2025-12-15",
+        "status": "Delivered",
+        "total_value": 8317,
+        "items_count": 7,
+        "tracking_number": null,
+        "estimated_delivery": "2025-12-23"
       }
     ],
     "account": {
@@ -1789,8 +1789,656 @@
       "current_balance": 45670,
       "payment_terms": "Net 30",
       "preferred_contact": "John Smith",
-      "last_login": "2026-01-02 10:56"
+      "last_login": "2026-01-02 16:06"
     },
-    "recent_orders": 9
+    "recent_orders": 7
+  },
+  "mailbox": {
+    "emails": [
+      {
+        "id": "EML-2026-001",
+        "sender": "chris.anderson@commercialairlines.com",
+        "sender_name": "Chris Anderson",
+        "subject": "Quote Request for Bearing Assemblies",
+        "received": "2025-12-29 02:06",
+        "read": true,
+        "priority": "Low",
+        "category": "Customer Inquiry",
+        "extracted_contacts": [],
+        "ai_insights": "Potential lead for aerospace components"
+      },
+      {
+        "id": "EML-2026-002",
+        "sender": "anna.davis@qualitysuppliers.com",
+        "sender_name": "Anna Davis",
+        "subject": "Quality Assurance Report",
+        "received": "2025-12-31 06:06",
+        "read": false,
+        "priority": "High",
+        "category": "Supplier Communication",
+        "extracted_contacts": [
+          {
+            "name": "Anna Davis",
+            "email": "anna.davis@qualitysuppliers.com",
+            "company": "Qualitysuppliers"
+          }
+        ],
+        "ai_insights": "Urgent quality issue reported"
+      },
+      {
+        "id": "EML-2026-003",
+        "sender": "mike.johnson@manufacturinginc.com",
+        "sender_name": "Mike Johnson",
+        "subject": "Update on Order SO-2026-023",
+        "received": "2026-01-02 03:06",
+        "read": true,
+        "priority": "Normal",
+        "category": "Supplier Communication",
+        "extracted_contacts": [
+          {
+            "name": "Mike Johnson",
+            "email": "mike.johnson@manufacturinginc.com",
+            "company": "Manufacturinginc"
+          }
+        ],
+        "ai_insights": "Potential lead for aerospace components"
+      },
+      {
+        "id": "EML-2026-004",
+        "sender": "mike.johnson@manufacturinginc.com",
+        "sender_name": "Mike Johnson",
+        "subject": "Technical Specifications Review",
+        "received": "2026-01-03 17:06",
+        "read": false,
+        "priority": "High",
+        "category": "Customer Inquiry",
+        "extracted_contacts": [],
+        "ai_insights": null
+      },
+      {
+        "id": "EML-2026-005",
+        "sender": "anna.davis@qualitysuppliers.com",
+        "sender_name": "Anna Davis",
+        "subject": "Delivery Schedule Confirmation",
+        "received": "2026-01-01 00:06",
+        "read": false,
+        "priority": "Normal",
+        "category": "Customer Inquiry",
+        "extracted_contacts": [],
+        "ai_insights": "Urgent quality issue reported"
+      },
+      {
+        "id": "EML-2026-006",
+        "sender": "emily.garcia@defensesystems.com",
+        "sender_name": "Emily Garcia",
+        "subject": "Quality Assurance Report",
+        "received": "2025-12-31 09:06",
+        "read": true,
+        "priority": "Normal",
+        "category": "Internal",
+        "extracted_contacts": [
+          {
+            "name": "Emily Garcia",
+            "email": "emily.garcia@defensesystems.com",
+            "company": "Defensesystems"
+          }
+        ],
+        "ai_insights": null
+      },
+      {
+        "id": "EML-2026-007",
+        "sender": "emily.garcia@defensesystems.com",
+        "sender_name": "Emily Garcia",
+        "subject": "Technical Specifications Review",
+        "received": "2025-12-30 19:06",
+        "read": false,
+        "priority": "Normal",
+        "category": "Customer Inquiry",
+        "extracted_contacts": [],
+        "ai_insights": "Technical specifications need clarification"
+      },
+      {
+        "id": "EML-2026-008",
+        "sender": "david.wilson@precisioneng.co.uk",
+        "sender_name": "David Wilson",
+        "subject": "Technical Specifications Review",
+        "received": "2026-01-02 14:06",
+        "read": false,
+        "priority": "Normal",
+        "category": "Internal",
+        "extracted_contacts": [
+          {
+            "name": "David Wilson",
+            "email": "david.wilson@precisioneng.co.uk",
+            "company": "Precisioneng"
+          }
+        ],
+        "ai_insights": null
+      },
+      {
+        "id": "EML-2026-009",
+        "sender": "anna.davis@qualitysuppliers.com",
+        "sender_name": "Anna Davis",
+        "subject": "New Product Inquiry",
+        "received": "2026-01-01 03:06",
+        "read": true,
+        "priority": "Normal",
+        "category": "Order Update",
+        "extracted_contacts": [
+          {
+            "name": "Anna Davis",
+            "email": "anna.davis@qualitysuppliers.com",
+            "company": "Qualitysuppliers"
+          }
+        ],
+        "ai_insights": null
+      },
+      {
+        "id": "EML-2026-010",
+        "sender": "lisa.brown@globalparts.co",
+        "sender_name": "Lisa Brown",
+        "subject": "Quality Assurance Report",
+        "received": "2025-12-31 04:06",
+        "read": true,
+        "priority": "Normal",
+        "category": "Customer Inquiry",
+        "extracted_contacts": [
+          {
+            "name": "Lisa Brown",
+            "email": "lisa.brown@globalparts.co",
+            "company": "Globalparts"
+          }
+        ],
+        "ai_insights": "Technical specifications need clarification"
+      },
+      {
+        "id": "EML-2026-011",
+        "sender": "john.doe@techcorp.com",
+        "sender_name": "John Doe",
+        "subject": "Technical Specifications Review",
+        "received": "2025-12-31 09:06",
+        "read": true,
+        "priority": "Low",
+        "category": "Supplier Communication",
+        "extracted_contacts": [],
+        "ai_insights": "Follow-up required on payment terms"
+      },
+      {
+        "id": "EML-2026-012",
+        "sender": "john.doe@techcorp.com",
+        "sender_name": "John Doe",
+        "subject": "Quote Request for Bearing Assemblies",
+        "received": "2026-01-03 11:06",
+        "read": false,
+        "priority": "Normal",
+        "category": "Customer Inquiry",
+        "extracted_contacts": [],
+        "ai_insights": "Follow-up required on payment terms"
+      },
+      {
+        "id": "EML-2026-013",
+        "sender": "john.doe@techcorp.com",
+        "sender_name": "John Doe",
+        "subject": "New Product Inquiry",
+        "received": "2025-12-31 17:06",
+        "read": false,
+        "priority": "Normal",
+        "category": "Supplier Communication",
+        "extracted_contacts": [],
+        "ai_insights": "Potential lead for aerospace components"
+      },
+      {
+        "id": "EML-2026-014",
+        "sender": "sarah.smith@industrialsolutions.de",
+        "sender_name": "Sarah Smith",
+        "subject": "Pricing Update for Part PT-1005",
+        "received": "2026-01-03 12:06",
+        "read": true,
+        "priority": "Low",
+        "category": "Internal",
+        "extracted_contacts": [
+          {
+            "name": "Sarah Smith",
+            "email": "sarah.smith@industrialsolutions.de",
+            "company": "Industrialsolutions"
+          }
+        ],
+        "ai_insights": "Technical specifications need clarification"
+      },
+      {
+        "id": "EML-2026-015",
+        "sender": "mike.johnson@manufacturinginc.com",
+        "sender_name": "Mike Johnson",
+        "subject": "Pricing Update for Part PT-1005",
+        "received": "2025-12-29 18:06",
+        "read": true,
+        "priority": "Normal",
+        "category": "Order Update",
+        "extracted_contacts": [
+          {
+            "name": "Mike Johnson",
+            "email": "mike.johnson@manufacturinginc.com",
+            "company": "Manufacturinginc"
+          }
+        ],
+        "ai_insights": "Urgent quality issue reported"
+      },
+      {
+        "id": "EML-2026-016",
+        "sender": "sarah.smith@industrialsolutions.de",
+        "sender_name": "Sarah Smith",
+        "subject": "Quote Request for Bearing Assemblies",
+        "received": "2025-12-29 13:06",
+        "read": false,
+        "priority": "Low",
+        "category": "Supplier Communication",
+        "extracted_contacts": [],
+        "ai_insights": "Follow-up required on payment terms"
+      },
+      {
+        "id": "EML-2026-017",
+        "sender": "lisa.brown@globalparts.co",
+        "sender_name": "Lisa Brown",
+        "subject": "Pricing Update for Part PT-1005",
+        "received": "2026-01-02 09:06",
+        "read": true,
+        "priority": "Low",
+        "category": "Customer Inquiry",
+        "extracted_contacts": [
+          {
+            "name": "Lisa Brown",
+            "email": "lisa.brown@globalparts.co",
+            "company": "Globalparts"
+          }
+        ],
+        "ai_insights": "Urgent quality issue reported"
+      },
+      {
+        "id": "EML-2026-018",
+        "sender": "chris.anderson@commercialairlines.com",
+        "sender_name": "Chris Anderson",
+        "subject": "New Product Inquiry",
+        "received": "2025-12-31 15:06",
+        "read": true,
+        "priority": "Normal",
+        "category": "Customer Inquiry",
+        "extracted_contacts": [],
+        "ai_insights": null
+      },
+      {
+        "id": "EML-2026-019",
+        "sender": "anna.davis@qualitysuppliers.com",
+        "sender_name": "Anna Davis",
+        "subject": "Contract Renewal Discussion",
+        "received": "2026-01-02 07:06",
+        "read": true,
+        "priority": "Low",
+        "category": "Supplier Communication",
+        "extracted_contacts": [
+          {
+            "name": "Anna Davis",
+            "email": "anna.davis@qualitysuppliers.com",
+            "company": "Qualitysuppliers"
+          }
+        ],
+        "ai_insights": null
+      },
+      {
+        "id": "EML-2026-020",
+        "sender": "robert.miller@aviationcorp.com",
+        "sender_name": "Robert Miller",
+        "subject": "Payment Terms Discussion",
+        "received": "2026-01-02 20:06",
+        "read": false,
+        "priority": "Low",
+        "category": "Customer Inquiry",
+        "extracted_contacts": [],
+        "ai_insights": "Urgent quality issue reported"
+      },
+      {
+        "id": "EML-2026-021",
+        "sender": "mike.johnson@manufacturinginc.com",
+        "sender_name": "Mike Johnson",
+        "subject": "Quality Assurance Report",
+        "received": "2026-01-04 03:06",
+        "read": true,
+        "priority": "High",
+        "category": "Order Update",
+        "extracted_contacts": [],
+        "ai_insights": "Urgent quality issue reported"
+      },
+      {
+        "id": "EML-2026-022",
+        "sender": "john.doe@techcorp.com",
+        "sender_name": "John Doe",
+        "subject": "Technical Specifications Review",
+        "received": "2026-01-01 05:06",
+        "read": true,
+        "priority": "Normal",
+        "category": "Order Update",
+        "extracted_contacts": [],
+        "ai_insights": null
+      },
+      {
+        "id": "EML-2026-023",
+        "sender": "mike.johnson@manufacturinginc.com",
+        "sender_name": "Mike Johnson",
+        "subject": "Technical Specifications Review",
+        "received": "2025-12-28 19:06",
+        "read": true,
+        "priority": "Normal",
+        "category": "Supplier Communication",
+        "extracted_contacts": [
+          {
+            "name": "Mike Johnson",
+            "email": "mike.johnson@manufacturinginc.com",
+            "company": "Manufacturinginc"
+          }
+        ],
+        "ai_insights": "Urgent quality issue reported"
+      },
+      {
+        "id": "EML-2026-024",
+        "sender": "robert.miller@aviationcorp.com",
+        "sender_name": "Robert Miller",
+        "subject": "Update on Order SO-2026-023",
+        "received": "2026-01-02 09:06",
+        "read": true,
+        "priority": "High",
+        "category": "Customer Inquiry",
+        "extracted_contacts": [],
+        "ai_insights": "Potential lead for aerospace components"
+      },
+      {
+        "id": "EML-2026-025",
+        "sender": "david.wilson@precisioneng.co.uk",
+        "sender_name": "David Wilson",
+        "subject": "Pricing Update for Part PT-1005",
+        "received": "2025-12-29 11:06",
+        "read": true,
+        "priority": "High",
+        "category": "Internal",
+        "extracted_contacts": [
+          {
+            "name": "David Wilson",
+            "email": "david.wilson@precisioneng.co.uk",
+            "company": "Precisioneng"
+          }
+        ],
+        "ai_insights": "Urgent quality issue reported"
+      }
+    ],
+    "total_emails": 25,
+    "unread_emails": 9,
+    "high_priority": 5,
+    "contacts_extracted": 12
+  },
+  "tickets": {
+    "tickets": [
+      {
+        "id": "TKT-2026-001",
+        "subject": "Unable to access customer portal",
+        "customer": "Manufacturing Inc",
+        "category": "Technical Support",
+        "priority": "Critical",
+        "status": "Open",
+        "created": "2025-12-14 16:06",
+        "updated": "2025-12-17 07:06",
+        "assigned_to": "John Smith",
+        "description": "Customer reported an issue with their recent order and requires immediate assistance.",
+        "resolution_time_hours": 19
+      },
+      {
+        "id": "TKT-2026-002",
+        "subject": "Technical documentation needed",
+        "customer": "Global Parts Co",
+        "category": "Product Information",
+        "priority": "Low",
+        "status": "Resolved",
+        "created": "2025-12-21 16:06",
+        "updated": "2025-12-22 11:06",
+        "assigned_to": "Sarah Johnson",
+        "description": "Customer reported an issue with their recent order and requires immediate assistance.",
+        "resolution_time_hours": 22
+      },
+      {
+        "id": "TKT-2026-003",
+        "subject": "Account password reset",
+        "customer": "Global Parts Co",
+        "category": "Order Issue",
+        "priority": "Low",
+        "status": "In Progress",
+        "created": "2025-12-11 16:06",
+        "updated": "2025-12-14 01:06",
+        "assigned_to": "Sarah Johnson",
+        "description": "Customer reported an issue with their recent order and requires immediate assistance.",
+        "resolution_time_hours": 31
+      },
+      {
+        "id": "TKT-2026-004",
+        "subject": "Order delay notification",
+        "customer": "Precision Engineering Ltd",
+        "category": "Account Management",
+        "priority": "Normal",
+        "status": "Waiting for Customer",
+        "created": "2025-12-16 16:06",
+        "updated": "2025-12-18 21:06",
+        "assigned_to": "Lisa Wilson",
+        "description": "Customer reported an issue with their recent order and requires immediate assistance.",
+        "resolution_time_hours": 37
+      },
+      {
+        "id": "TKT-2026-005",
+        "subject": "Product specifications request",
+        "customer": "TechCorp Ltd",
+        "category": "Account Management",
+        "priority": "Normal",
+        "status": "Open",
+        "created": "2025-12-20 16:06",
+        "updated": "2025-12-22 14:06",
+        "assigned_to": "John Smith",
+        "description": "Customer reported an issue with their recent order and requires immediate assistance.",
+        "resolution_time_hours": 44
+      },
+      {
+        "id": "TKT-2026-006",
+        "subject": "Shipping tracking issue",
+        "customer": "TechCorp Ltd",
+        "category": "Technical Support",
+        "priority": "Critical",
+        "status": "Open",
+        "created": "2026-01-03 16:06",
+        "updated": "2026-01-05 12:06",
+        "assigned_to": "Unassigned",
+        "description": "Customer reported an issue with their recent order and requires immediate assistance.",
+        "resolution_time_hours": null
+      },
+      {
+        "id": "TKT-2026-007",
+        "subject": "Unable to access customer portal",
+        "customer": "Global Parts Co",
+        "category": "Technical Support",
+        "priority": "Low",
+        "status": "Resolved",
+        "created": "2025-12-09 16:06",
+        "updated": "2025-12-12 05:06",
+        "assigned_to": "Unassigned",
+        "description": "Customer reported an issue with their recent order and requires immediate assistance.",
+        "resolution_time_hours": null
+      },
+      {
+        "id": "TKT-2026-008",
+        "subject": "Product specifications request",
+        "customer": "Global Parts Co",
+        "category": "Billing Question",
+        "priority": "Critical",
+        "status": "Closed",
+        "created": "2025-12-05 16:06",
+        "updated": "2025-12-06 07:06",
+        "assigned_to": "Mike Davis",
+        "description": "Customer reported an issue with their recent order and requires immediate assistance.",
+        "resolution_time_hours": null
+      },
+      {
+        "id": "TKT-2026-009",
+        "subject": "Order delay notification",
+        "customer": "TechCorp Ltd",
+        "category": "Product Information",
+        "priority": "Low",
+        "status": "In Progress",
+        "created": "2025-12-14 16:06",
+        "updated": "2025-12-16 23:06",
+        "assigned_to": "Sarah Johnson",
+        "description": "Customer reported an issue with their recent order and requires immediate assistance.",
+        "resolution_time_hours": 24
+      },
+      {
+        "id": "TKT-2026-010",
+        "subject": "Technical documentation needed",
+        "customer": "Global Parts Co",
+        "category": "Product Information",
+        "priority": "Normal",
+        "status": "Closed",
+        "created": "2025-12-19 16:06",
+        "updated": "2025-12-21 02:06",
+        "assigned_to": "Lisa Wilson",
+        "description": "Customer reported an issue with their recent order and requires immediate assistance.",
+        "resolution_time_hours": 34
+      },
+      {
+        "id": "TKT-2026-011",
+        "subject": "Return authorization request",
+        "customer": "Global Parts Co",
+        "category": "Technical Support",
+        "priority": "High",
+        "status": "In Progress",
+        "created": "2025-12-18 16:06",
+        "updated": "2025-12-20 19:06",
+        "assigned_to": "Unassigned",
+        "description": "Customer reported an issue with their recent order and requires immediate assistance.",
+        "resolution_time_hours": null
+      },
+      {
+        "id": "TKT-2026-012",
+        "subject": "Shipping tracking issue",
+        "customer": "Industrial Solutions GmbH",
+        "category": "Product Information",
+        "priority": "Low",
+        "status": "In Progress",
+        "created": "2026-01-03 16:06",
+        "updated": "2026-01-06 08:06",
+        "assigned_to": "Unassigned",
+        "description": "Customer reported an issue with their recent order and requires immediate assistance.",
+        "resolution_time_hours": null
+      },
+      {
+        "id": "TKT-2026-013",
+        "subject": "Order delay notification",
+        "customer": "Manufacturing Inc",
+        "category": "Technical Support",
+        "priority": "Critical",
+        "status": "Resolved",
+        "created": "2025-12-30 16:06",
+        "updated": "2026-01-01 13:06",
+        "assigned_to": "Unassigned",
+        "description": "Customer reported an issue with their recent order and requires immediate assistance.",
+        "resolution_time_hours": null
+      },
+      {
+        "id": "TKT-2026-014",
+        "subject": "Technical documentation needed",
+        "customer": "Manufacturing Inc",
+        "category": "Account Management",
+        "priority": "High",
+        "status": "In Progress",
+        "created": "2026-01-01 16:06",
+        "updated": "2026-01-02 23:06",
+        "assigned_to": "Mike Davis",
+        "description": "Customer reported an issue with their recent order and requires immediate assistance.",
+        "resolution_time_hours": null
+      },
+      {
+        "id": "TKT-2026-015",
+        "subject": "Unable to access customer portal",
+        "customer": "Industrial Solutions GmbH",
+        "category": "Technical Support",
+        "priority": "High",
+        "status": "In Progress",
+        "created": "2025-12-17 16:06",
+        "updated": "2025-12-18 08:06",
+        "assigned_to": "Lisa Wilson",
+        "description": "Customer reported an issue with their recent order and requires immediate assistance.",
+        "resolution_time_hours": null
+      },
+      {
+        "id": "TKT-2026-016",
+        "subject": "Quote approval process",
+        "customer": "Manufacturing Inc",
+        "category": "Billing Question",
+        "priority": "Low",
+        "status": "Open",
+        "created": "2025-12-08 16:06",
+        "updated": "2025-12-08 21:06",
+        "assigned_to": "Lisa Wilson",
+        "description": "Customer reported an issue with their recent order and requires immediate assistance.",
+        "resolution_time_hours": 7
+      },
+      {
+        "id": "TKT-2026-017",
+        "subject": "Quote approval process",
+        "customer": "TechCorp Ltd",
+        "category": "Technical Support",
+        "priority": "Critical",
+        "status": "Resolved",
+        "created": "2025-12-27 16:06",
+        "updated": "2025-12-28 14:06",
+        "assigned_to": "Lisa Wilson",
+        "description": "Customer reported an issue with their recent order and requires immediate assistance.",
+        "resolution_time_hours": 16
+      },
+      {
+        "id": "TKT-2026-018",
+        "subject": "Invoice discrepancy",
+        "customer": "Precision Engineering Ltd",
+        "category": "Product Information",
+        "priority": "Normal",
+        "status": "Resolved",
+        "created": "2025-12-30 16:06",
+        "updated": "2025-12-31 17:06",
+        "assigned_to": "Sarah Johnson",
+        "description": "Customer reported an issue with their recent order and requires immediate assistance.",
+        "resolution_time_hours": 44
+      },
+      {
+        "id": "TKT-2026-019",
+        "subject": "Shipping tracking issue",
+        "customer": "Precision Engineering Ltd",
+        "category": "Account Management",
+        "priority": "Low",
+        "status": "Resolved",
+        "created": "2025-12-13 16:06",
+        "updated": "2025-12-16 06:06",
+        "assigned_to": "John Smith",
+        "description": "Customer reported an issue with their recent order and requires immediate assistance.",
+        "resolution_time_hours": 2
+      },
+      {
+        "id": "TKT-2026-020",
+        "subject": "Order delay notification",
+        "customer": "Precision Engineering Ltd",
+        "category": "Technical Support",
+        "priority": "Normal",
+        "status": "Open",
+        "created": "2026-01-01 16:06",
+        "updated": "2026-01-02 17:06",
+        "assigned_to": "Unassigned",
+        "description": "Customer reported an issue with their recent order and requires immediate assistance.",
+        "resolution_time_hours": null
+      }
+    ],
+    "total_tickets": 20,
+    "open_tickets": 12,
+    "resolved_tickets": 8,
+    "average_resolution_time": 25.5
   }
 }

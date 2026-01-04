@@ -1,0 +1,162 @@
+{% extends "base_demo.html" %}
+
+{% block title %}Support Tickets - Sproutt Demo{% endblock %}
+
+{% block content %}
+<div>
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h1 class="mb-1">
+                <i class="bi bi-headset text-primary me-3"></i>
+                Support Tickets
+            </h1>
+            <p class="text-muted mb-0">Customer support and issue tracking</p>
+        </div>
+        <div class="text-end">
+            <div class="h4 mb-1 text-info">{{ data.tickets.total_tickets }}</div>
+            <small class="text-muted">Total Tickets</small>
+        </div>
+    </div>
+
+    <!-- Key Metrics -->
+    <div class="row mb-4">
+        <div class="col-md-3 mb-3">
+            <div class="demo-card text-center">
+                <div class="card-body">
+                    <h4 class="text-warning mb-1">{{ data.tickets.open_tickets }}</h4>
+                    <small class="text-muted">Open Tickets</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="demo-card text-center">
+                <div class="card-body">
+                    <h4 class="text-success mb-1">{{ data.tickets.resolved_tickets }}</h4>
+                    <small class="text-muted">Resolved</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="demo-card text-center">
+                <div class="card-body">
+                    <h4 class="text-info mb-1">{{ data.tickets.average_resolution_time }}</h4>
+                    <small class="text-muted">Avg Resolution (hrs)</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="demo-card text-center">
+                <div class="card-body">
+                    <h4 class="text-primary mb-1">{{ data.tickets.total_tickets }}</h4>
+                    <small class="text-muted">Total</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tickets Table -->
+    <div class="demo-card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">
+                <i class="bi bi-list-check me-2"></i>
+                Support Tickets
+            </h5>
+            <div class="d-flex gap-2">
+                <input type="text" class="form-control form-control-sm" placeholder="Search tickets..." style="width: 200px;">
+                <select class="form-select form-select-sm" style="width: 150px;">
+                    <option>All Status</option>
+                    <option>Open</option>
+                    <option>In Progress</option>
+                    <option>Waiting for Customer</option>
+                    <option>Resolved</option>
+                    <option>Closed</option>
+                </select>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table demo-table">
+                    <thead>
+                        <tr>
+                            <th>Ticket ID</th>
+                            <th>Subject</th>
+                            <th>Customer</th>
+                            <th>Priority</th>
+                            <th>Status</th>
+                            <th>Category</th>
+                            <th>Assigned To</th>
+                            <th>Created</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for ticket in data.tickets.tickets %}
+                        <tr>
+                            <td>
+                                <strong>{{ ticket.id }}</strong>
+                            </td>
+                            <td>{{ ticket.subject }}</td>
+                            <td>{{ ticket.customer }}</td>
+                            <td>
+                                {% if ticket.priority == 'Critical' %}
+                                    <span class="badge bg-danger">{{ ticket.priority }}</span>
+                                {% elif ticket.priority == 'High' %}
+                                    <span class="badge bg-warning">{{ ticket.priority }}</span>
+                                {% elif ticket.priority == 'Normal' %}
+                                    <span class="badge bg-info">{{ ticket.priority }}</span>
+                                {% else %}
+                                    <span class="badge bg-secondary">{{ ticket.priority }}</span>
+                                {% endif %}
+                            </td>
+                            <td>
+                                {% if ticket.status == 'Open' %}
+                                    <span class="status-badge status-pending">{{ ticket.status }}</span>
+                                {% elif ticket.status == 'In Progress' %}
+                                    <span class="status-badge status-active">{{ ticket.status }}</span>
+                                {% elif ticket.status == 'Waiting for Customer' %}
+                                    <span class="status-badge status-pending">{{ ticket.status }}</span>
+                                {% elif ticket.status == 'Resolved' %}
+                                    <span class="status-badge status-completed">{{ ticket.status }}</span>
+                                {% else %}
+                                    <span class="status-badge status-completed">{{ ticket.status }}</span>
+                                {% endif %}
+                            </td>
+                            <td>
+                                <span class="badge bg-light text-dark">{{ ticket.category }}</span>
+                            </td>
+                            <td>{{ ticket.assigned_to }}</td>
+                            <td>{{ ticket.created }}</td>
+                            <td>
+                                <div class="btn-group btn-group-sm">
+                                    <button class="btn btn-outline-primary btn-sm" disabled>
+                                        <i class="bi bi-eye"></i>
+                                    </button>
+                                    <button class="btn btn-outline-secondary btn-sm" disabled>
+                                        <i class="bi bi-pencil"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Tickets pagination" class="mt-4">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+{% endblock %}

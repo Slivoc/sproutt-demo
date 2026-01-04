@@ -281,6 +281,69 @@ def generate_demo_data():
         'last_login': (datetime.now() - timedelta(days=2)).strftime('%Y-%m-%d %H:%M')
     }
 
+    # Generate mailbox data
+    emails = []
+    email_senders = [
+        'john.doe@techcorp.com', 'sarah.smith@industrialsolutions.de', 'mike.johnson@manufacturinginc.com',
+        'lisa.brown@globalparts.co', 'david.wilson@precisioneng.co.uk', 'anna.davis@qualitysuppliers.com',
+        'robert.miller@aviationcorp.com', 'emily.garcia@defensesystems.com', 'chris.anderson@commercialairlines.com'
+    ]
+    email_subjects = [
+        'Quote Request for Bearing Assemblies', 'Update on Order SO-2026-023', 'New Product Inquiry',
+        'Delivery Schedule Confirmation', 'Payment Terms Discussion', 'Technical Specifications Review',
+        'Quality Assurance Report', 'Pricing Update for Part PT-1005', 'Contract Renewal Discussion'
+    ]
+    for i in range(25):
+        sender = random.choice(email_senders)
+        subject = random.choice(email_subjects)
+        received_date = datetime.now() - timedelta(hours=random.randint(1, 168))  # Last 7 days
+        emails.append({
+            'id': f'EML-{2026}-{i+1:03d}',
+            'sender': sender,
+            'sender_name': sender.split('@')[0].replace('.', ' ').title(),
+            'subject': subject,
+            'received': received_date.strftime('%Y-%m-%d %H:%M'),
+            'read': random.random() > 0.3,
+            'priority': random.choice(['Normal', 'High', 'Low']),
+            'category': random.choice(['Customer Inquiry', 'Order Update', 'Supplier Communication', 'Internal']),
+            'extracted_contacts': [
+                {'name': sender.split('@')[0].replace('.', ' ').title(), 'email': sender, 'company': sender.split('@')[1].split('.')[0].title()}
+            ] if random.random() > 0.5 else [],
+            'ai_insights': random.choice([
+                'Potential lead for aerospace components',
+                'Follow-up required on payment terms',
+                'Technical specifications need clarification',
+                'Urgent quality issue reported',
+                None
+            ])
+        })
+
+    # Generate tickets data
+    tickets = []
+    ticket_categories = ['Technical Support', 'Order Issue', 'Billing Question', 'Product Information', 'Account Management']
+    ticket_priorities = ['Low', 'Normal', 'High', 'Critical']
+    ticket_statuses = ['Open', 'In Progress', 'Waiting for Customer', 'Resolved', 'Closed']
+    for i in range(20):
+        created_date = datetime.now() - timedelta(days=random.randint(1, 30))
+        updated_date = created_date + timedelta(hours=random.randint(1, 72))
+        tickets.append({
+            'id': f'TKT-{2026}-{i+1:03d}',
+            'subject': random.choice([
+                'Unable to access customer portal', 'Order delay notification', 'Invoice discrepancy',
+                'Product specifications request', 'Account password reset', 'Shipping tracking issue',
+                'Quote approval process', 'Return authorization request', 'Technical documentation needed'
+            ]),
+            'customer': random.choice(['TechCorp Ltd', 'Industrial Solutions GmbH', 'Manufacturing Inc', 'Global Parts Co', 'Precision Engineering Ltd']),
+            'category': random.choice(ticket_categories),
+            'priority': random.choice(ticket_priorities),
+            'status': random.choice(ticket_statuses),
+            'created': created_date.strftime('%Y-%m-%d %H:%M'),
+            'updated': updated_date.strftime('%Y-%m-%d %H:%M'),
+            'assigned_to': random.choice(['John Smith', 'Sarah Johnson', 'Mike Davis', 'Lisa Wilson', 'Unassigned']),
+            'description': 'Customer reported an issue with their recent order and requires immediate assistance.',
+            'resolution_time_hours': random.randint(1, 48) if random.random() > 0.3 else None
+        })
+
     return {
         'dashboard': {
             'metrics': dashboard_metrics,
@@ -329,6 +392,20 @@ def generate_demo_data():
             'orders': portal_orders,
             'account': portal_account,
             'recent_orders': len([o for o in portal_orders if (datetime.now() - datetime.strptime(o['date'], '%Y-%m-%d')).days <= 30])
+        },
+        'mailbox': {
+            'emails': emails,
+            'total_emails': len(emails),
+            'unread_emails': len([e for e in emails if not e['read']]),
+            'high_priority': len([e for e in emails if e['priority'] == 'High']),
+            'contacts_extracted': sum(len(e['extracted_contacts']) for e in emails)
+        },
+        'tickets': {
+            'tickets': tickets,
+            'total_tickets': len(tickets),
+            'open_tickets': len([t for t in tickets if t['status'] in ['Open', 'In Progress', 'Waiting for Customer']]),
+            'resolved_tickets': len([t for t in tickets if t['status'] in ['Resolved', 'Closed']]),
+            'average_resolution_time': round(sum(t['resolution_time_hours'] for t in tickets if t['resolution_time_hours']) / len([t for t in tickets if t['resolution_time_hours']]), 1) if any(t['resolution_time_hours'] for t in tickets) else 0
         }
     }
 

@@ -1,0 +1,162 @@
+{% extends "base_demo.html" %}
+
+{% block title %}Mailbox - Sproutt Demo{% endblock %}
+
+{% block content %}
+<div>
+    <!-- Feature Description -->
+    <div class="alert alert-info mb-4">
+        <h5><i class="bi bi-lightbulb me-2"></i>Connect Your Email to Sproutt</h5>
+        <p class="mb-0">Work with emails directly in the app. Enter RFQs, quotes, sales orders, and anything else without manually copying and pasting from email.</p>
+    </div>
+
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h1 class="mb-1">
+                <i class="bi bi-envelope text-primary me-3"></i>
+                Mailbox
+            </h1>
+            <p class="text-muted mb-0">Email connectivity and contact extraction</p>
+        </div>
+        <div class="text-end">
+            <div class="h4 mb-1 text-info">{{ data.mailbox.total_emails }}</div>
+            <small class="text-muted">Total Emails</small>
+        </div>
+    </div>
+
+    <!-- Key Metrics -->
+    <div class="row mb-4">
+        <div class="col-md-3 mb-3">
+            <div class="demo-card text-center">
+                <div class="card-body">
+                    <h4 class="text-warning mb-1">{{ data.mailbox.unread_emails }}</h4>
+                    <small class="text-muted">Unread</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="demo-card text-center">
+                <div class="card-body">
+                    <h4 class="text-danger mb-1">{{ data.mailbox.high_priority }}</h4>
+                    <small class="text-muted">High Priority</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="demo-card text-center">
+                <div class="card-body">
+                    <h4 class="text-success mb-1">{{ data.mailbox.contacts_extracted }}</h4>
+                    <small class="text-muted">Contacts Extracted</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="demo-card text-center">
+                <div class="card-body">
+                    <h4 class="text-info mb-1">{{ data.mailbox.total_emails }}</h4>
+                    <small class="text-muted">Total Processed</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Emails Table -->
+    <div class="demo-card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">
+                <i class="bi bi-list-check me-2"></i>
+                Email Inbox
+            </h5>
+            <div class="d-flex gap-2">
+                <input type="text" class="form-control form-control-sm" placeholder="Search emails..." style="width: 200px;">
+                <select class="form-select form-select-sm" style="width: 150px;">
+                    <option>All Categories</option>
+                    <option>Customer Inquiry</option>
+                    <option>Order Update</option>
+                    <option>Supplier Communication</option>
+                    <option>Internal</option>
+                </select>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table demo-table">
+                    <thead>
+                        <tr>
+                            <th>Status</th>
+                            <th>From</th>
+                            <th>Subject</th>
+                            <th>Category</th>
+                            <th>Received</th>
+                            <th>AI Insights</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for email in data.mailbox.emails %}
+                        <tr class="{% if not email.read %}table-light{% endif %}">
+                            <td>
+                                {% if not email.read %}
+                                    <i class="bi bi-circle-fill text-primary"></i>
+                                {% else %}
+                                    <i class="bi bi-check-circle text-muted"></i>
+                                {% endif %}
+                                {% if email.priority == 'High' %}
+                                    <i class="bi bi-exclamation-triangle-fill text-warning ms-1"></i>
+                                {% endif %}
+                            </td>
+                            <td>
+                                <strong>{{ email.sender_name }}</strong><br>
+                                <small class="text-muted">{{ email.sender }}</small>
+                            </td>
+                            <td>
+                                <strong>{{ email.subject }}</strong>
+                                {% if email.extracted_contacts %}
+                                    <br><small class="text-success"><i class="bi bi-person-plus"></i> Contact extracted</small>
+                                {% endif %}
+                            </td>
+                            <td>
+                                <span class="badge bg-secondary">{{ email.category }}</span>
+                            </td>
+                            <td>{{ email.received }}</td>
+                            <td>
+                                {% if email.ai_insights %}
+                                    <small class="text-info">{{ email.ai_insights }}</small>
+                                {% else %}
+                                    <small class="text-muted">-</small>
+                                {% endif %}
+                            </td>
+                            <td>
+                                <div class="btn-group btn-group-sm">
+                                    <button class="btn btn-outline-primary btn-sm" disabled>
+                                        <i class="bi bi-eye"></i>
+                                    </button>
+                                    <button class="btn btn-outline-secondary btn-sm" disabled>
+                                        <i class="bi bi-reply"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Emails pagination" class="mt-4">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+{% endblock %}
