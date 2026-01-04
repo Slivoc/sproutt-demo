@@ -1,6 +1,6 @@
 {% extends "base_demo.html" %}
 
-{% block title %}Support Tickets - Sproutt Demo{% endblock %}
+{% block title %}Internal Job Tickets - Sproutt Demo{% endblock %}
 
 {% block content %}
 <div>
@@ -8,14 +8,14 @@
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
             <h1 class="mb-1">
-                <i class="bi bi-headset text-primary me-3"></i>
-                Support Tickets
+                <i class="bi bi-briefcase text-primary me-3"></i>
+                Internal Job Tickets
             </h1>
-            <p class="text-muted mb-0">Customer support and issue tracking</p>
+            <p class="text-muted mb-0">Job tracking and workflow management</p>
         </div>
         <div class="text-end">
             <div class="h4 mb-1 text-info">{{ data.tickets.total_tickets }}</div>
-            <small class="text-muted">Total Tickets</small>
+            <small class="text-muted">Total Jobs</small>
         </div>
     </div>
 
@@ -25,7 +25,15 @@
             <div class="demo-card text-center">
                 <div class="card-body">
                     <h4 class="text-warning mb-1">{{ data.tickets.open_tickets }}</h4>
-                    <small class="text-muted">Open Tickets</small>
+                    <small class="text-muted">Pending</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="demo-card text-center">
+                <div class="card-body">
+                    <h4 class="text-info mb-1">{{ data.tickets.resolved_tickets }}</h4>
+                    <small class="text-muted">In Progress</small>
                 </div>
             </div>
         </div>
@@ -33,15 +41,7 @@
             <div class="demo-card text-center">
                 <div class="card-body">
                     <h4 class="text-success mb-1">{{ data.tickets.resolved_tickets }}</h4>
-                    <small class="text-muted">Resolved</small>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 mb-3">
-            <div class="demo-card text-center">
-                <div class="card-body">
-                    <h4 class="text-info mb-1">{{ data.tickets.average_resolution_time }}</h4>
-                    <small class="text-muted">Avg Resolution (hrs)</small>
+                    <small class="text-muted">Completed</small>
                 </div>
             </div>
         </div>
@@ -55,50 +55,96 @@
         </div>
     </div>
 
-    <!-- Tickets Table -->
+    <!-- Kanban Board -->
     <div class="demo-card">
         <div class="card-header d-flex justify-content-between align-items-center">
             <h5 class="mb-0">
-                <i class="bi bi-list-check me-2"></i>
-                Support Tickets
+                <i class="bi bi-kanban me-2"></i>
+                Job Board
             </h5>
             <div class="d-flex gap-2">
-                <input type="text" class="form-control form-control-sm" placeholder="Search tickets..." style="width: 200px;">
+                <input type="text" class="form-control form-control-sm" placeholder="Search jobs..." style="width: 200px;">
                 <select class="form-select form-select-sm" style="width: 150px;">
-                    <option>All Status</option>
-                    <option>Open</option>
-                    <option>In Progress</option>
-                    <option>Waiting for Customer</option>
-                    <option>Resolved</option>
-                    <option>Closed</option>
+                    <option>All Priority</option>
+                    <option>Critical</option>
+                    <option>High</option>
+                    <option>Normal</option>
+                    <option>Low</option>
                 </select>
             </div>
         </div>
         <div class="card-body">
-            <div class="table-responsive">
-                <table class="table demo-table">
-                    <thead>
-                        <tr>
-                            <th>Ticket ID</th>
-                            <th>Subject</th>
-                            <th>Customer</th>
-                            <th>Priority</th>
-                            <th>Status</th>
-                            <th>Category</th>
-                            <th>Assigned To</th>
-                            <th>Created</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+            <style>
+                .kanban-board {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 1.5rem;
+                    padding: 1rem 0;
+                }
+                .kanban-column {
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #f8f9fa;
+                    border-radius: 8px;
+                    padding: 1rem;
+                    min-height: 500px;
+                }
+                .kanban-column-header {
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                    padding-bottom: 0.5rem;
+                    border-bottom: 2px solid #dee2e6;
+                }
+                .kanban-cards {
+                    flex: 1;
+                    overflow-y: auto;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.75rem;
+                }
+                .job-card {
+                    background: white;
+                    border: 1px solid #dee2e6;
+                    border-radius: 6px;
+                    padding: 0.75rem;
+                    cursor: grab;
+                    transition: box-shadow 0.2s;
+                }
+                .job-card:hover {
+                    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+                }
+                .job-card-title {
+                    font-weight: 500;
+                    margin-bottom: 0.5rem;
+                    font-size: 0.95rem;
+                }
+                .job-card-id {
+                    font-size: 0.8rem;
+                    color: #6c757d;
+                    margin-bottom: 0.5rem;
+                }
+                .job-card-footer {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 0.8rem;
+                    margin-top: 0.5rem;
+                }
+            </style>
+
+            <div class="kanban-board">
+                <!-- Pending Column -->
+                <div class="kanban-column">
+                    <div class="kanban-column-header text-warning">
+                        <i class="bi bi-clock me-2"></i>Pending
+                    </div>
+                    <div class="kanban-cards">
                         {% for ticket in data.tickets.tickets %}
-                        <tr>
-                            <td>
-                                <strong>{{ ticket.id }}</strong>
-                            </td>
-                            <td>{{ ticket.subject }}</td>
-                            <td>{{ ticket.customer }}</td>
-                            <td>
+                        {% if ticket.status == 'Open' %}
+                        <div class="job-card">
+                            <div class="job-card-id">{{ ticket.id }}</div>
+                            <div class="job-card-title">{{ ticket.subject }}</div>
+                            <div>
                                 {% if ticket.priority == 'Critical' %}
                                     <span class="badge bg-danger">{{ ticket.priority }}</span>
                                 {% elif ticket.priority == 'High' %}
@@ -108,54 +154,78 @@
                                 {% else %}
                                     <span class="badge bg-secondary">{{ ticket.priority }}</span>
                                 {% endif %}
-                            </td>
-                            <td>
-                                {% if ticket.status == 'Open' %}
-                                    <span class="status-badge status-pending">{{ ticket.status }}</span>
-                                {% elif ticket.status == 'In Progress' %}
-                                    <span class="status-badge status-active">{{ ticket.status }}</span>
-                                {% elif ticket.status == 'Waiting for Customer' %}
-                                    <span class="status-badge status-pending">{{ ticket.status }}</span>
-                                {% elif ticket.status == 'Resolved' %}
-                                    <span class="status-badge status-completed">{{ ticket.status }}</span>
-                                {% else %}
-                                    <span class="status-badge status-completed">{{ ticket.status }}</span>
-                                {% endif %}
-                            </td>
-                            <td>
-                                <span class="badge bg-light text-dark">{{ ticket.category }}</span>
-                            </td>
-                            <td>{{ ticket.assigned_to }}</td>
-                            <td>{{ ticket.created }}</td>
-                            <td>
-                                <div class="btn-group btn-group-sm">
-                                    <button class="btn btn-outline-primary btn-sm" disabled>
-                                        <i class="bi bi-eye"></i>
-                                    </button>
-                                    <button class="btn btn-outline-secondary btn-sm" disabled>
-                                        <i class="bi bi-pencil"></i>
-                                    </button>
-                                </div>
-                            </td>
-                        </tr>
+                            </div>
+                            <div class="job-card-footer">
+                                <span class="text-muted">{{ ticket.assigned_to }}</span>
+                            </div>
+                        </div>
+                        {% endif %}
                         {% endfor %}
-                    </tbody>
-                </table>
-            </div>
+                    </div>
+                </div>
 
-            <!-- Pagination -->
-            <nav aria-label="Tickets pagination" class="mt-4">
-                <ul class="pagination justify-content-center">
-                    <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1">Previous</a>
-                    </li>
-                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
-                    </li>
-                </ul>
-            </nav>
+                <!-- In Progress Column -->
+                <div class="kanban-column">
+                    <div class="kanban-column-header text-info">
+                        <i class="bi bi-arrow-repeat me-2"></i>In Progress
+                    </div>
+                    <div class="kanban-cards">
+                        {% for ticket in data.tickets.tickets %}
+                        {% if ticket.status == 'In Progress' %}
+                        <div class="job-card">
+                            <div class="job-card-id">{{ ticket.id }}</div>
+                            <div class="job-card-title">{{ ticket.subject }}</div>
+                            <div>
+                                {% if ticket.priority == 'Critical' %}
+                                    <span class="badge bg-danger">{{ ticket.priority }}</span>
+                                {% elif ticket.priority == 'High' %}
+                                    <span class="badge bg-warning">{{ ticket.priority }}</span>
+                                {% elif ticket.priority == 'Normal' %}
+                                    <span class="badge bg-info">{{ ticket.priority }}</span>
+                                {% else %}
+                                    <span class="badge bg-secondary">{{ ticket.priority }}</span>
+                                {% endif %}
+                            </div>
+                            <div class="job-card-footer">
+                                <span class="text-muted">{{ ticket.assigned_to }}</span>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <!-- Completed Column -->
+                <div class="kanban-column">
+                    <div class="kanban-column-header text-success">
+                        <i class="bi bi-check-circle me-2"></i>Completed
+                    </div>
+                    <div class="kanban-cards">
+                        {% for ticket in data.tickets.tickets %}
+                        {% if ticket.status == 'Resolved' or ticket.status == 'Closed' %}
+                        <div class="job-card">
+                            <div class="job-card-id">{{ ticket.id }}</div>
+                            <div class="job-card-title">{{ ticket.subject }}</div>
+                            <div>
+                                {% if ticket.priority == 'Critical' %}
+                                    <span class="badge bg-danger">{{ ticket.priority }}</span>
+                                {% elif ticket.priority == 'High' %}
+                                    <span class="badge bg-warning">{{ ticket.priority }}</span>
+                                {% elif ticket.priority == 'Normal' %}
+                                    <span class="badge bg-info">{{ ticket.priority }}</span>
+                                {% else %}
+                                    <span class="badge bg-secondary">{{ ticket.priority }}</span>
+                                {% endif %}
+                            </div>
+                            <div class="job-card-footer">
+                                <span class="text-muted">{{ ticket.assigned_to }}</span>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
